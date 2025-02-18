@@ -39,7 +39,7 @@ function Navbar() {
 
       {/* Mobile Menu (Visible when Open) */}
       {isOpen && (
-        <ul className="md:hidden flex flex-col items-center space-y-4 py-4 bg-black bg-opacity-80">
+        <ul className="md:hidden flex flex-col items-center space-y-4 py-4 bg-[#111110] bg-opacity-80">
           {["Home", "About Me", "Services", "Portfolio", "Contact"].map((item) => (
             <li
               key={item}
