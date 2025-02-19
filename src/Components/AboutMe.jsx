@@ -60,7 +60,7 @@ function AboutMe() {
           </div>
         </div>
       </div>
-      <div className="w-[80%] max-w-5xl mx-auto flex flex-wrap items-center justify-center gap-4 sm:gap-9 text-center text-white mt-8">
+      <div className="w-[80%] mx-auto flex flex-wrap items-center justify-around gap-4 sm:gap-9 text-center text-white mt-11 ">
   {[
     { number: "4320hr+", label: "Coding" },
     { number: "120,349+", label: "Lines Of Code" },
@@ -68,7 +68,7 @@ function AboutMe() {
     { number: "Last commit", label: "2hr ago" },
   ].map(({ number, label }, index) => (
     <React.Fragment key={index}>
-      <div className="flex flex-col items-center gap-1 px-2">
+      <div className="flex flex-col items-center gap-1 px-2 transition-transform duration-300 hover:scale-110">
         <h1 className="text-lg sm:text-xl md:text-2xl font-semibold bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
           {number}
         </h1>
