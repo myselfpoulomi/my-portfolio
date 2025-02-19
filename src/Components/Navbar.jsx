@@ -19,7 +19,7 @@ function Navbar() {
 
         {/* Navigation Links (Hidden in Mobile, Visible in Desktop) */}
         <ul className="hidden md:flex list-none justify-evenly space-x-6">
-          {["Home", "About Me", "Services", "Portfolio", "Contact"].map((item) => (
+          {["Home", "About Me", "Techs", "Portfolio", "Contact"].map((item) => (
             <li
               key={item}
               className="relative cursor-pointer after:content-[''] after:absolute after:w-full after:h-[2px] after:bg-gradient-to-r after:from-indigo-500 after:via-purple-500 after:to-pink-500 after:left-0 after:bottom-[-2px] after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100"
