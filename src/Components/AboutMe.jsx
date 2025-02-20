@@ -47,7 +47,7 @@ function AboutMe() {
             ].map(({ skill, width }, index) => (
               <div
                 key={index}
-                className="flex items-center gap-5 transition-transform duration-300 ease-in-out transform hover:scale-105 active:scale-95"
+                className="flex items-center gap-5"
               >
                 <p className="min-w-[120px] text-sm md:text-base font-medium">
                   {skill}
