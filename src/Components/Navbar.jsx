@@ -31,7 +31,7 @@ function Navbar() {
 
         {/* Button (Desktop Only) */}
         <div className="hidden md:flex">
-          <button className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-xl py-2 px-6 transition-transform transform hover:scale-105">
+          <button className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-xl py-2 px-6 transition-transform transform hover:scale-105 duration-200 ease-linear">
             Connect With Me
           </button>
         </div>

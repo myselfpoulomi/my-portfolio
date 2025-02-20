@@ -1,4 +1,16 @@
 import React from "react";
+import C from "../assets/icons/C.svg";
+import CPP from "../assets/icons/CPP.svg";
+import CSS from "../assets/icons/CSS.svg";
+import GitHub from "../assets/icons/Github-Dark.svg";
+import HTML from "../assets/icons/HTML.svg";
+import Java from "../assets/icons/Java-Dark.svg";
+import JavaScript from "../assets/icons/JavaScript.svg";
+import Reactlogo from "../assets/icons/React-Dark.svg";
+import Tailwind from "../assets/icons/TailwindCSS-Dark.svg";
+import Firebase from "../assets/icons/Firebase-Dark.svg";
+import Nextjs from "../assets/icons/NextJS-Dark.svg";
+import Vite from "../assets/icons/Vite-Dark.svg";
 
 function Techs() {
   return (
@@ -18,11 +30,29 @@ function Techs() {
         </h1>
       </div>
       <div className="h-[430px] flex items-center justify-center w-[100%] mt-7">
-        <div className="border border-zinc-100 h-[400px] w-[50%] rounded-md flex items-center justify-center">
-          <div className="border border-zinc-300 h-[370px] w-[97%] rounded-md">
-
+        
+          <div className=" h-[390px] w-[60%] rounded-md bg-[#161513]">
+            {[
+              [Reactlogo, JavaScript, Tailwind, Firebase],
+              [HTML, CSS, Nextjs, Vite],
+              [C, CPP, Java, GitHub],
+            ].map((row, rowIndex) => (
+              <div
+                key={rowIndex}
+                className="h-[120px] flex items-center justify-evenly"
+              >
+                {row.map((imgSrc, index) => (
+                  <img
+                    key={index}
+                    className="h-[50px] w-[50px] transition-transform duration-500 ease-in-out hover:scale-110 hover:shadow-xl"
+                    src={imgSrc}
+                    alt=""
+                  />
+                ))}
+              </div>
+            ))}
           </div>
-        </div>
+       
       </div>
     </div>
   );
