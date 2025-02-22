@@ -37,7 +37,7 @@ function Projects() {
                 </button>
               </div>
             </div>
-            <div className="w-full md:w-[30%] flex justify-center items-center relative group">
+            <div className="w-full md:w-[35%] flex justify-center items-center relative group">
               <a
                 href="https://project2-clone-movie-app-polu.netlify.app/"
                 target="_blank"
@@ -79,7 +79,7 @@ function Projects() {
                 </button>
               </div>
             </div>
-            <div className="w-full md:w-[30%] flex justify-center items-center relative group">
+            <div className="w-full md:w-[35%] flex justify-center items-center relative group">
               <a
                 href="https://github.com/myselfpoulomi/Netflix-Clone-Reactjs"
                 target="_blank"
@@ -119,7 +119,7 @@ function Projects() {
                 </button>
               </div>
             </div>
-            <div className="w-full md:w-[30%] flex justify-center items-center relative group">
+            <div className="w-full md:w-[35%] flex justify-center items-center relative group">
               <a
                 href="https://vscode-landing-page-polu.netlify.app/"
                 target="_blank"
@@ -159,7 +159,7 @@ function Projects() {
                 </button>
               </div>
             </div>
-            <div className="w-full md:w-[30%] flex justify-center items-center relative group">
+            <div className="w-full md:w-[35%] flex justify-center items-center relative group">
               <a
                 href="https://project3-video-app-clone-polu.netlify.app/"
                 target="_blank"
