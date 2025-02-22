@@ -3,7 +3,7 @@ import profilepic from "../assets/profilepic.jpg";
 
 function AboutMe() {
   return (
-    <div className="text-white mt-8 px-4 md:px-12 lg:px-20 md:h-[800px] h-[700px] flex flex-col items-center ">
+    <div className="text-white mt-8 px-8 md:px-12 lg:px-20 md:h-[800px] h-[700px] flex flex-col items-center ">
       {/* Section Title */}
       <div className="text-[32px] md:text-[40px] font-bold text-center mt-2 relative">
         <h1 className="inline-block relative pb-2 text-zinc-200">

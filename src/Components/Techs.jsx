@@ -31,7 +31,7 @@ function Techs() {
       </div>
       <div className="h-[430px] flex items-center justify-center w-[100%] md:mt-7 mt-2">
         
-          <div className=" h-[390px] w-[80%] md:w-[60px] rounded-md bg-[#161513]">
+          <div className=" h-[390px] md:w-[50%] w-[90%]  rounded-md bg-[#161513]">
             {[
               [Reactlogo, JavaScript, Tailwind, Firebase],
               [HTML, CSS, Nextjs, Vite],
@@ -39,7 +39,7 @@ function Techs() {
             ].map((row, rowIndex) => (
               <div
                 key={rowIndex}
-                className="h-[120px] flex items-center justify-evenly"
+                className="h-[120px] flex items-center justify-evenly gap-5"
               >
                 {row.map((imgSrc, index) => (
                   <img
