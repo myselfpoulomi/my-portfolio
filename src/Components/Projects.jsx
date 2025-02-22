@@ -7,17 +7,17 @@ import { ArrowUpRight } from "lucide-react";
 
 function Projects() {
   return (
-    <div className="h-[1180px]">
+    <div className="h-[1280px]">
       <div className="text-[32px] md:text-[40px] font-bold text-center md:mt-2 relative mt-16">
         <h1 className="inline-block relative pb-2 text-zinc-200">
           My Latest Works
           <span className="rounded absolute left-0 bottom-0 w-full h-1 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500"></span>
         </h1>
       </div>
-      <div className="h-[1100px] w-[100%] flex flex-col items-center justify-center">
-        <div className=" w-[90%] flex flex-col gap-4">
+      <div className="h-[1210px] w-[100%] flex flex-col items-center justify-around">
+        <div className=" w-[75%] flex flex-col gap-8">
           /{/* 1st project */}
-          <div className="border border-zinc-300 h-[250px] flex items-center justify-center gap-8 rounded-lg">
+          <div className="border border-zinc-300 h-[250px] flex items-center justify-evenly gap-8 rounded-lg">
             <div className="h-[240px] w-[40%] flex flex-col justify-center items-center gap-2">
               <h1 className="text-[50px] font-semibold  text-zinc-300">
                 Disney+Hotstar-Clone
@@ -60,17 +60,13 @@ function Projects() {
             </div>
           </div>
           {/* 2nd project */}
-          <div className="border border-zinc-300 h-[250px] flex items-center justify-center gap-7 rounded-lg">
+          <div className="border border-zinc-300 h-[250px] flex items-center justify-evenly gap-7 rounded-lg">
             <div className="h-[240px] w-[40%] flex flex-col justify-center items-center gap-2">
               <h1 className="text-[50px] font-semibold text-zinc-300">
                 Netflix-Clone
               </h1>
               <p className="text-zinc-300 text-[16px] text-center font-light">
-                Netflix Clone using React.js, Tailwind CSS, and Firebase,
-                recreating its sleek UI with responsive design, smooth
-                navigation, and dynamic content displays. I also added a login
-                page with Firebase authentication, securely storing user info
-                for a seamless experience.
+              Netflix Clone built with React.js, Tailwind CSS, and Firebase, offering a sleek and responsive UI. It includes user authentication, secure data storage, and dynamic content rendering, delivering a seamless and immersive streaming experience.
               </p>
 
               <div className="flex gap-4 mt-4">
@@ -106,7 +102,7 @@ function Projects() {
             </div>
           </div>
           {/* 3rd project */}
-          <div className="border border-zinc-300 h-[250px] flex items-center justify-center gap-7 rounded-lg">
+          <div className="border border-zinc-300 h-[250px] flex items-center justify-evenly gap-7 rounded-lg">
             <div className="h-[240px] w-[40%] flex flex-col justify-center items-center gap-2">
               <h1 className="text-[50px] font-semibold  text-zinc-300">
                 VS Code Landing Page
@@ -146,7 +142,7 @@ function Projects() {
             </div>
           </div>
           {/* 4th project */}
-          <div className="border border-zinc-300 h-[250px] flex items-center justify-center gap-7 rounded-lg">
+          <div className="border border-zinc-300 h-[250px] flex items-center justify-evenly gap-7 rounded-lg">
             <div className="h-[240px] w-[40%] flex flex-col justify-center items-center gap-2">
               <h1 className="text-[50px] font-semibold  text-zinc-300">
                 Youtube Clone
