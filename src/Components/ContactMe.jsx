@@ -11,7 +11,7 @@ function ContactMe() {
           <span className="rounded absolute left-0 bottom-0 w-full  h-1 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500"></span>
         </h1>
       </div>
-      <div className="w-full md:w-[75%] md:mt-20 mt-9 flex flex-wrap md:flex-nowrap justify-between items-center md:gap-5 gap-14">
+      <div className="w-full md:w-[75%] md:mt-20 mt-9 flex flex-wrap md:flex-nowrap justify-evenly items-center md:gap-5 gap-10 border border-white">
         {/* Left Section - Contact Info */}
         <div className="w-full md:w-[35%] flex flex-col gap-6  text-start md:mt-0 mt-4">
         <span className="bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 w-fit font-bold text-[40px] md:text-[50px]">
