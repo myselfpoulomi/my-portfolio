@@ -50,17 +50,22 @@
 // export default Footer;
 
 import React from "react";
+import { FaLinkedin } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
+import { FaInstagram } from "react-icons/fa6";
+
 
 function Footer() {
   return (
-    <div className="min-h-[350px] border border-white mt-20 flex flex-col items-center justify-center w-full">
-      <div className="h-[150px] w-[74%] flex items-center justify-between">
+    <div className="h-[280px] mt-24 flex flex-col items-center">
+      <div className=" flex items-center w-[68%] justify-between">
         {/* Left Section */}
-        <div className="flex flex-col gap-4 border border-white w-[35%] h-[150px] ">
+        <div className="flex flex-col gap-4  w-[40%] ">
           <div className="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 w-fit">
             {"<Poulomi/>"}
           </div>
-          <p className="text-gray-300">
+          <p className="text-gray-300 font-light">
             I am a frontend developer from Kolkata, India. I work with React.js,
             HTML, CSS, JavaScript, Tailwind, and Firebase. Let's create
             something together...
@@ -68,17 +73,23 @@ function Footer() {
         </div>
 
         {/* Right Section */}
-        <div className="flex gap-3 w-[50%] border border-white h-[150px]">
-          <div className="flex w-full md:w-[250px] text-left">
+        <div className="flex w-[50%] ">
+          <div className="flex flex-col w-full items-end gap-5">
             <h1 className="font-semibold text-[25px] text-zinc-300">
-              Follow Me On
+              Follow Me on
             </h1>
+            <div className="flex gap-6">
+              <FaLinkedin className="text-zinc-300 text-[30px]"/>
+              <FaGithub className="text-zinc-300 text-[30px]"/>
+              <FaXTwitter className="text-zinc-300 text-[30px]"/>
+              <FaInstagram className="text-zinc-300 text-[30px]"/>
+            </div>
           </div>
         </div>
       </div>
 
       {/* Centered hr tag */}
-      <hr className="w-[74%] border-zinc-600 my-6 h-[2px] bg-zinc-600 mx-auto" />
+      <hr className="w-[71%] border-zinc-600 my-6 h-[2px] bg-zinc-600 mx-auto" />
       <div className="flex flex-col md:flex-row justify-between items-center text-gray-400 text-sm">
         <p>© 2024 Poulomi Routh. All rights reserved.</p>
       </div>
