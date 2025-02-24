@@ -18,8 +18,8 @@ function Projects() {
         <div className="w-[90%] flex flex-col justify-center items-center gap-8">
           {/* 1st project */}
           <div className="border border-zinc-400 h-auto flex flex-col md:flex-row items-center justify-evenly gap-8 p-4 rounded-xl transition-all duration-300 hover:border-zinc-200 hover:shadow-lg md:w-[75%] w-[100%]">
-            <div className="w-full md:w-[40%] flex flex-col justify-center items-center gap-2 text-center md:text-left">
-              <h1 className="text-[35px] md:text-[50px] font-semibold text-zinc-300">
+            <div className="w-full md:w-[50%] flex flex-col justify-center items-center gap-2 text-center md:text-left">
+              <h1 className="text-[35px] md:text-[48px] font-semibold text-zinc-300">
                 Disney+Hotstar Clone
               </h1>
               <p className="text-zinc-300 text-[14px] md:text-[16px] font-light text-center">
@@ -59,8 +59,8 @@ function Projects() {
           </div>
           {/* 2nd project  */}
           <div className="border border-zinc-400 h-auto flex flex-col md:flex-row items-center justify-evenly gap-8 p-4 rounded-xl transition-all duration-300 hover:border-zinc-200 hover:shadow-lg md:w-[75%] w-[100%]">
-            <div className="w-full md:w-[40%] flex flex-col justify-center items-center gap-2 text-center md:text-left">
-              <h1 className="text-[35px] md:text-[50px] font-semibold text-zinc-300">
+            <div className="w-full md:w-[50%] flex flex-col justify-center items-center gap-2 text-center md:text-left">
+              <h1 className="text-[35px] md:text-[48px] font-semibold text-zinc-300">
                 Netflix Clone
               </h1>
               <p className="text-zinc-300 text-[14px] md:text-[16px] font-light text-center">
@@ -100,11 +100,11 @@ function Projects() {
           </div>
           {/* 3rd project  */}
           <div className="border border-zinc-400 h-auto flex flex-col md:flex-row items-center justify-evenly gap-8 p-4 rounded-xl transition-all duration-300 hover:border-zinc-200 hover:shadow-lg md:w-[75%] w-[100%]">
-            <div className="w-full md:w-[40%] flex flex-col justify-center items-center gap-2 text-center md:text-left">
-              <h1 className="text-[33px] md:text-[45px] font-semibold text-zinc-300">
+            <div className="w-full md:w-[50%] flex flex-col justify-center items-center gap-2 text-center md:text-left">
+              <h1 className="text-[33px] md:text-[48px] font-semibold text-zinc-300">
                 VS Code Landing Page
               </h1>
-              <p className="text-zinc-300 text-[14px] md:text-[16px] font-light text-center">
+              <p className="text-zinc-300 text-[14px] md:text-[15px] font-light text-center">
                 VS Code Landing Page using HTML and Tailwind CSS, featuring a
                 clean, modern, and fully responsive design. The page highlights
                 VS Code’s key features with a sleek layout and smooth styling,
@@ -140,8 +140,8 @@ function Projects() {
           </div>
           {/* 4th project  */}
           <div className="border border-zinc-400 h-auto flex flex-col md:flex-row items-center justify-evenly gap-8 p-4 rounded-xl transition-all duration-300 hover:border-zinc-200 hover:shadow-lg md:w-[75%] w-[100%]">
-            <div className="w-full md:w-[40%] flex flex-col justify-center items-center gap-2 text-center md:text-left">
-              <h1 className="text-[35px] md:text-[50px] font-semibold text-zinc-300">
+            <div className="w-full md:w-[50%] flex flex-col justify-center items-center gap-2 text-center md:text-left">
+              <h1 className="text-[35px] md:text-[48px] font-semibold text-zinc-300">
                 Youtube Clone
               </h1>
               <p className="text-zinc-300 text-[14px] md:text-[16px] font-light text-center">
