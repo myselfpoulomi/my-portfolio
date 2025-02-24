@@ -60,7 +60,7 @@ function AboutMe() {
           </div>
         </div>
       </div>
-      <div className="w-[80%] mx-auto flex flex-wrap items-center justify-around gap-4 sm:gap-9 text-center text-white mt-11 ">
+      <div className="w-[80%] mx-auto flex flex-wrap items-center justify-around gap-4 sm:gap-9 text-center text-white mt-24 ">
   {[
     { number: "4320hr+", label: "Coding" },
     { number: "120,349+", label: "Lines Of Code" },
