@@ -4,16 +4,16 @@ import location from "../assets/icons/location.svg";
 
 function ContactMe() {
   return (
-    <div className="flex flex-col items-center  mt-7 p-6">
+    <div className="flex flex-col items-center  mt-7 py-6 justify-center">
       <div className="text-[28px] md:text-[40px] font-bold text-center relative">
         <h1 className="inline-block relative pb-2 text-zinc-200">
           Contact Me
           <span className="rounded absolute left-0 bottom-0 w-full  h-1 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500"></span>
         </h1>
       </div>
-      <div className="w-full md:w-[75%] md:mt-20 mt-9 flex flex-wrap md:flex-nowrap justify-evenly items-center md:gap-2 gap-10">
+      <div className="w-full px-[10%] md:mt-20 mt-9 flex flex-wrap md:flex-nowrap justify-center items-center gap-4">
         {/* Left Section - Contact Info */}
-        <div className="w-full md:w-[30%] flex flex-col gap-6  text-start md:mt-0 mt-4">
+        <div className="w-full md:w-[25%] flex flex-col gap-6  text-start md:mt-0 mt-4">
         <span className="bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 w-fit font-bold text-[40px] md:text-[50px]">
                 Let's Talk
               </span>

@@ -3,7 +3,7 @@ import profilepic from "../assets/profilepic.jpg";
 
 function Home() {
   return (
-    <div className="md:h-[780px] h-[600px] text-white flex items-center justify-center flex-col gap-1 px-6 md:px-0 mt-6">
+    <div className="md:h-[770px] h-[600px] text-white flex items-center justify-center flex-col gap-1 px-6 md:px-0 mt-6">
       <div className=" flex flex-col justify-center items-center md:gap-2 gap-5 md:h-[580px] h-[500px] w-full  md:w-[40%]">
         <img
           src={profilepic}
