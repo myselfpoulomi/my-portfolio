@@ -26,10 +26,34 @@ function Footer() {
               Follow Me on
             </h1>
             <div className="flex gap-5">
-              <FaLinkedin className="text-zinc-300 text-[25px] cursor-pointer hover:text-white transition" />
-              <FaGithub className="text-zinc-300 text-[25px] cursor-pointer hover:text-white transition" />
-              <FaXTwitter className="text-zinc-300 text-[25px] cursor-pointer hover:text-white transition" />
-              <FaInstagram className="text-zinc-300 text-[25px] cursor-pointer hover:text-white transition" />
+              <a
+                href="https://www.linkedin.com/in/poulomi-routh/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaLinkedin className="text-zinc-300 text-[25px] cursor-pointer hover:text-white transition" />
+              </a>
+              <a
+                href="https://github.com/myselfpoulomi"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaGithub className="text-zinc-300 text-[25px] cursor-pointer hover:text-white transition" />
+              </a>
+              <a
+                href="https://x.com/PoluuuCodes"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaXTwitter className="text-zinc-300 text-[25px] cursor-pointer hover:text-white transition" />
+              </a>
+              <a
+                href="https://www.instagram.com/myself.poulomi"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaInstagram className="text-zinc-300 text-[25px] cursor-pointer hover:text-white transition" />
+              </a>
             </div>
           </div>
         </div>
