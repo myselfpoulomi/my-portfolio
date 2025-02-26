@@ -17,7 +17,7 @@ function Projects() {
       <div className="h-auto w-[100%] flex flex-col items-center justify-around mt-14">
         <div className="w-[90%] flex flex-col justify-center items-center gap-8">
           {/* 1st project */}
-          <div className="border border-zinc-400 h-auto flex flex-col md:flex-row items-center justify-evenly gap-8 p-4 rounded-xl transition-all duration-300 hover:border-zinc-200 hover:shadow-lg md:w-[75%] w-[100%]">
+          <div className="border border-zinc-700 h-auto flex flex-col md:flex-row items-center justify-evenly gap-8 p-4 rounded-xl transition-all duration-300 hover:border-zinc-500 hover:shadow-lg md:w-[75%] w-[100%]">
             <div className="w-full md:w-[50%] flex flex-col justify-center items-center gap-2 text-center md:text-left">
               <h1 className="text-[35px] md:text-[48px] font-semibold text-zinc-300">
                 Disney+Hotstar Clone
@@ -58,7 +58,7 @@ function Projects() {
             </div>
           </div>
           {/* 2nd project  */}
-          <div className="border border-zinc-400 h-auto flex flex-col md:flex-row items-center justify-evenly gap-8 p-4 rounded-xl transition-all duration-300 hover:border-zinc-200 hover:shadow-lg md:w-[75%] w-[100%]">
+          <div className="border border-zinc-700 h-auto flex flex-col md:flex-row items-center justify-evenly gap-8 p-4 rounded-xl transition-all duration-300 hover:border-zinc-500 hover:shadow-lg md:w-[75%] w-[100%]">
             <div className="w-full md:w-[50%] flex flex-col justify-center items-center gap-2 text-center md:text-left">
               <h1 className="text-[35px] md:text-[48px] font-semibold text-zinc-300">
                 Netflix Clone
@@ -99,7 +99,7 @@ function Projects() {
             </div>
           </div>
           {/* 3rd project  */}
-          <div className="border border-zinc-400 h-auto flex flex-col md:flex-row items-center justify-evenly gap-8 p-4 rounded-xl transition-all duration-300 hover:border-zinc-200 hover:shadow-lg md:w-[75%] w-[100%]">
+          <div className="border border-zinc-700 h-auto flex flex-col md:flex-row items-center justify-evenly gap-8 p-4 rounded-xl transition-all duration-300 hover:border-zinc-500 hover:shadow-lg md:w-[75%] w-[100%]">
             <div className="w-full md:w-[50%] flex flex-col justify-center items-center gap-2 text-center md:text-left">
               <h1 className="text-[33px] md:text-[48px] font-semibold text-zinc-300">
                 VS Code Landing Page
@@ -139,7 +139,7 @@ function Projects() {
             </div>
           </div>
           {/* 4th project  */}
-          <div className="border border-zinc-400 h-auto flex flex-col md:flex-row items-center justify-evenly gap-8 p-4 rounded-xl transition-all duration-300 hover:border-zinc-200 hover:shadow-lg md:w-[75%] w-[100%]">
+          <div className="border border-zinc-700 h-auto flex flex-col md:flex-row items-center justify-evenly gap-8 p-4 rounded-xl transition-all duration-300 hover:border-zinc-500 hover:shadow-lg md:w-[75%] w-[100%]">
             <div className="w-full md:w-[50%] flex flex-col justify-center items-center gap-2 text-center md:text-left">
               <h1 className="text-[35px] md:text-[48px] font-semibold text-zinc-300">
                 Youtube Clone

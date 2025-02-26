@@ -30,7 +30,7 @@ function ContactMe() {
             </p>
           </div>
           <div className="flex gap-2 md:gap-7 items-center justify-start">
-            <img src={location} alt="Location Icon" className="md:w-[25px] w-[17px]" />
+            <img src={location} alt="Location Icon" className="md:w-[22px] w-[17px]" />
             <p className="text-zinc-300 text-[17px]">Kolkata, India</p>
           </div>
         </div>
