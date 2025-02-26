@@ -4,7 +4,7 @@ import { FaXTwitter, FaInstagram } from "react-icons/fa6";
 
 function Footer() {
   return (
-    <div className="w-full py-10 flex flex-col items-center mt-12 gap-8">
+    <div className="w-full py-10 flex flex-col items-center mt-24 gap-8">
       <div className="w-full max-w-[1490px] px-6 md:px-12 lg:px-24 gap-8">
         {/* Main Content */}
         <div className="flex flex-col md:flex-row justify-between items-center md:items-start gap-10">

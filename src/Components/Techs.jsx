@@ -21,11 +21,11 @@ function Techs() {
           <span className="rounded absolute left-0 bottom-0 w-full h-1 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500"></span>
         </h1>
       </div>
-      <div className="text-center md:mt-10 mt-5 flex flex-col justify-center h-[170px]">
-        <h1 className="font-semibold text-[40px] sm:text-[35px] md:text-[45px] flex flex-col text-center text-zinc-200">
+      <div className="text-center md:mt-10 mt-5 flex flex-col justify-center px-5 py-0">
+        <h1 className="font-medium text-[39px] sm:text-[35px] md:text-[45px] flex flex-col text-center text-zinc-200 ">
           Some of Techs I like
         </h1>
-        <h1 className="bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-[40px] sm:text-[55px] md:text-[60px] font-normal tracking-wider">
+        <h1 className="bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-[39px] sm:text-[55px] md:text-[45px] font-medium -mt-3">
           to work with
         </h1>
       </div>

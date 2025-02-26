@@ -24,7 +24,7 @@ function AboutMe() {
         </div>
 
         {/* About Me Text */}
-        <div className="w-full md:w-[55%] text-[18px] md:text-[22px] font-light text-zinc-200 flex flex-col gap-10">
+        <div className="w-full md:w-[55%] text-[18px] md:text-[22px] font-light text-zinc-200 flex flex-col gap-10 mt-10">
           <p>
             I'm a Frontend Developer who loves building clean, responsive, and
             user-friendly websites. I work with React.js, HTML, CSS, JavaScript,

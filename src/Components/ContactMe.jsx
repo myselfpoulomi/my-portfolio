@@ -42,7 +42,7 @@ function ContactMe() {
             <input
               type="text"
               placeholder="Enter your name"
-              className="w-full p-2 bg-gray-800 text-white border border-gray-700 rounded"
+              className="w-full p-2 bg-[#201e1b] text-white border border-gray-700 rounded"
             />
           </div>
           <div>
@@ -50,14 +50,14 @@ function ContactMe() {
             <input
               type="email"
               placeholder="Enter your email"
-              className="w-full p-2 bg-gray-800 text-white border border-gray-700 rounded"
+              className="w-full p-2 bg-[#201e1b] text-white border border-gray-700 rounded"
             />
           </div>
           <div>
             <p className="mb-1">Write your message here</p>
             <textarea
               placeholder="Enter your message"
-              className="w-full p-2 bg-gray-800 text-white border border-gray-700 rounded h-32"
+              className="w-full p-2 bg-[#201e1b] text-white border border-gray-700 rounded h-32"
             ></textarea>
           </div>
           <div className="flex justify-center md:justify-start w-[100%]">
