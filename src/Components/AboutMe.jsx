@@ -3,7 +3,7 @@ import profilepic from "../assets/profilepic.jpg";
 
 function AboutMe() {
   return (
-    <div className="text-white mt-8 px-8 md:px-12 lg:px-20 md:h-[800px] h-[700px] flex flex-col items-center ">
+    <div className="text-white mt-8 px-8 md:px-12 lg:px-20 md:h-[800px] h-[700px] flex flex-col items-center">
       {/* Section Title */}
       <div className="text-[32px] md:text-[40px] font-bold text-center mt-2 relative">
         <h1 className="inline-block relative pb-2 text-zinc-200">
@@ -15,16 +15,16 @@ function AboutMe() {
       {/* Content Container */}
       <div className="flex flex-col md:flex-row items-center justify-center gap-10 md:gap-20 mt-8 h-[450px]">
         {/* Profile Picture */}
-        <div className="w-[80%] sm:w-[50%] md:w-[30%] lg:w-[20%] hidden sm:flex justify-center">
+        <div className="w-[80%] sm:w-[50%] md:w-[30%] lg:w-[20%] hidden sm:flex justify-center ">
           <img
-            className="w-full max-w-[300px] h-auto rounded-lg"
+            className="w-full max-w-[270px] h-auto rounded-lg"
             src={profilepic}
             alt="Profile"
           />
         </div>
 
         {/* About Me Text */}
-        <div className="w-full md:w-[55%] text-[18px] md:text-[22px] font-light text-zinc-200 flex flex-col gap-10 mt-10">
+        <div className="w-full md:w-[55%] text-[18px] md:text-[22px] font-light text-zinc-200 flex flex-col gap-9">
           <p>
             I'm a Frontend Developer who loves building clean, responsive, and
             user-friendly websites. I work with React.js, HTML, CSS, JavaScript,
@@ -38,7 +38,7 @@ function AboutMe() {
           </p>
 
           {/* Skills Progress Bars */}
-          <div className="flex flex-col gap-[20px]">
+          <div className="flex flex-col gap-[20px] cursor-pointer">
             {[
               { skill: "HTML & CSS", width: "w-[70%]" },
               { skill: "React Js", width: "w-[60%]" },
