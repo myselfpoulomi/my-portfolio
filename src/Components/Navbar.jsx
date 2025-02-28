@@ -5,7 +5,7 @@ function Navbar() {
 
   return (
     <nav className="w-full text-white bg-transparent">
-      <div className="flex items-center justify-between md:justify-evenly px-6 py-4 md:px-10">
+      <div className="flex items-center justify-between md:justify-evenly px-6 py-6 md:px-10">
         {/* Logo / Brand Name */}
         <div className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">{"<Poulomi/>"}</div>
 

@@ -3,6 +3,44 @@ import email from "../assets/icons/email.svg";
 import location from "../assets/icons/location.svg";
 
 function ContactMe() {
+
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    console.log("Form submission started...");
+  
+    try {
+      const formData = new FormData(event.target);
+      formData.append("access_key", "c6cf40aa-c7e1-427d-a1e7-8c0026e0e7d9");
+  
+      const object = Object.fromEntries(formData);
+      const json = JSON.stringify(object);
+  
+      console.log("Form Data Object:", object);
+      console.log("JSON Payload:", json);
+  
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json"
+        },
+        body: json
+      });
+  
+      const res = await response.json();
+      console.log("API Response:", res);
+  
+      if (res.success) {
+        console.log("Success:", res);
+      } else {
+        console.error("Form submission failed:", res);
+      }
+    } catch (error) {
+      console.error("Error during form submission:", error);
+    }
+  };
+  
+
   return (
     <div className="flex flex-col items-center  mt-16 py-6 justify-center">
       <div className="text-[28px] md:text-[40px] font-bold text-center relative">
@@ -36,37 +74,41 @@ function ContactMe() {
         </div>
 
         {/* Right Section - Form */}
-        <div className="w-full md:w-[60%] px-4 md:px-6 text-zinc-300 flex flex-col gap-4 md:gap-5">
+        <form 
+        onSubmit={onSubmit}
+        className="w-full md:w-[60%] px-4 md:px-6 text-zinc-300 flex flex-col gap-4 md:gap-5">
           <div>
-            <p className="mb-1">Your Name</p>
+            <label className="mb-1">Your Name</label>
             <input
               type="text"
+              name="name"
               placeholder="Enter your name"
               className="w-full p-2 bg-[#201e1b] text-white border border-gray-700 rounded"
             />
           </div>
           <div>
-            <p className="mb-1">Your Email</p>
+            <label className="mb-1">Your Email</label>
             <input
               type="email"
+              name="email"
               placeholder="Enter your email"
               className="w-full p-2 bg-[#201e1b] text-white border border-gray-700 rounded"
             />
           </div>
           <div>
-            <p className="mb-1">Write your message here</p>
+            <label className="mb-1">Write your message here</label>
             <textarea
               placeholder="Enter your message"
               className="w-full p-2 bg-[#201e1b] text-white border border-gray-700 rounded h-32"
+              name="massage"
             ></textarea>
           </div>
           <div className="flex justify-center md:justify-start w-[100%]">
-          <button className="px-6 py-3 w-[200px] rounded-full text-white font-medium bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:opacity-90 transition">
+          <button type="submit" className="px-6 py-3 w-[200px] rounded-full text-white font-medium bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:opacity-90 transition">
             Submit now
           </button>
           </div>
-          
-        </div>
+        </form>
       </div>
     </div>
   );
