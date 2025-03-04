@@ -42,7 +42,7 @@ function ContactMe() {
   
 
   return (
-    <div className="flex flex-col items-center  mt-16 py-6 justify-center">
+    <div id="contact" className="flex flex-col items-center  mt-16 py-6 justify-center">
       <div className="text-[28px] md:text-[40px] font-bold text-center relative">
         <h1 className="inline-block relative pb-2 text-zinc-200">
           Contact Me

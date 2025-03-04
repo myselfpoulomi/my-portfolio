@@ -7,7 +7,7 @@ import { ArrowUpRight } from "lucide-react";
 
 function Projects() {
   return (
-    <div className="h-auto">
+    <div id="portfolio" className="h-auto">
       <div className="text-[32px] md:text-[40px] font-bold text-center md:mt-2 relative mt-0">
         <h1 className="inline-block relative pb-2 text-zinc-200">
           My Latest Works
@@ -76,6 +76,9 @@ function Projects() {
                 </button>
                 <button className="px-6 py-2 border border-zinc-500 text-zinc-300 rounded-full bg-transparent backdrop-blur-md hover:bg-white hover:bg-opacity-10 transition-all duration-300">
                   Tailwind
+                </button>
+                <button className="px-6 py-2 border border-zinc-500 text-zinc-300 rounded-full bg-transparent backdrop-blur-md hover:bg-white hover:bg-opacity-10 transition-all duration-300">
+                  Firebase
                 </button>
               </div>
             </div>
