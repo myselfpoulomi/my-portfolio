@@ -8,10 +8,20 @@ function ContactMe() {
     event.preventDefault();
     console.log("Form submission started...");
 
-    try {
-      const formData = new FormData(event.target);
-      formData.append("access_key", "ce528312-de78-4dac-8426-d783b32e5fdf");
+    // Get form data
+    const formData = new FormData(event.target);
+    const name = formData.get("name").trim();
+    const email = formData.get("email").trim();
+    const message = formData.get("massage").trim();
 
+    // Validation: Check if any field is empty
+    if (!name || !email || !message) {
+      toast.warning("Please fill in all fields before submitting!");
+      return;
+    }
+
+    try {
+      formData.append("access_key", "ce528312-de78-4dac-8426-d783b32e5fdf");
       const object = Object.fromEntries(formData);
       const json = JSON.stringify(object);
 
@@ -31,29 +41,31 @@ function ContactMe() {
       console.log("API Response:", res);
 
       if (res.success) {
-        console.log("Success:", res);
+        toast.success("Email submitted successfully!");
+        event.target.reset(); // Clear the form fields after successful submission
       } else {
-        console.error("Form submission failed:", res);
+        toast.error("Form submission failed. Please try again!");
       }
     } catch (error) {
       console.error("Error during form submission:", error);
+      toast.error("Something went wrong. Please try again later!");
     }
   };
 
   return (
     <div
       id="contact"
-      className="flex flex-col items-center  mt-16 py-6 justify-center"
+      className="flex flex-col items-center mt-16 py-6 justify-center"
     >
       <div className="text-[28px] md:text-[40px] font-bold text-center relative">
         <h1 className="inline-block relative pb-2 text-zinc-200">
           Contact Me
-          <span className="rounded absolute left-0 bottom-0 w-full  h-1 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500"></span>
+          <span className="rounded absolute left-0 bottom-0 w-full h-1 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500"></span>
         </h1>
       </div>
-      <div className="w-full px-[10%] md:mt-20 mt-9 flex flex-wrap md:flex-nowrap justify-evenly  gap-10">
+      <div className="w-full px-[10%] md:mt-20 mt-9 flex flex-wrap md:flex-nowrap justify-evenly gap-10">
         {/* Left Section - Contact Info */}
-        <div className="w-full md:w-[25%] flex flex-col gap-6  text-start md:mt-0">
+        <div className="w-full md:w-[25%] flex flex-col gap-6 text-start md:mt-0">
           <span className="bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 w-fit font-bold text-[40px] md:text-[50px]">
             Let's Talk
           </span>
@@ -63,7 +75,7 @@ function ContactMe() {
             can contact anytime.
           </p>
 
-          <div className="flex gap-2 md:gap-6 items-center  justify-items-start">
+          <div className="flex gap-2 md:gap-6 items-center justify-items-start">
             <img
               src={email}
               alt="Email Icon"
@@ -117,7 +129,6 @@ function ContactMe() {
           <div className="flex justify-center md:justify-start w-[100%]">
             <button
               type="submit"
-              onClick={() => toast.success("Email submitted successfully!")}
               className="px-6 py-3 w-[200px] rounded-full text-white font-medium bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:opacity-90 transition"
             >
               Submit now
