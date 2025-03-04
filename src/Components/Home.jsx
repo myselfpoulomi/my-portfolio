@@ -1,6 +1,8 @@
 import React from "react";
+import { Link } from "react-scroll";
 import profilepic from "../assets/profilepic.jpg";
-import RESUME_POULOMI_ROUTH from '../assets/RESUME_POULOMI_ROUTH.pdf'
+import RESUME_POULOMI_ROUTH from '../assets/RESUME_POULOMI_ROUTH.pdf';
+
 function Home() {
   const handleDownloadResume = () => {
     const link = document.createElement("a");
@@ -8,11 +10,10 @@ function Home() {
     link.download = "RESUME_POULOMI_ROUTH.pdf";
 
     document.body.appendChild(link);
-
     link.click();
-
     document.body.removeChild(link);
   };
+
   return (
     <div id="home" className="md:h-[770px] h-[600px] text-white flex items-center justify-center flex-col gap-1 px-6 md:px-0 mt-3">
       <div className=" flex flex-col justify-center items-center md:gap-2 gap-5 md:h-[580px] h-[500px] w-full  md:w-[40%]">
@@ -46,13 +47,16 @@ function Home() {
         </div>
       </div>
       <div className="h-[40px] w-full max-w-[350px] md:w-[30%] flex items-center justify-evenly mt-0">
-        <button className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-xl py-2 px-6 transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg">
-          Connect With Me
-        </button>
+        <Link to="contact" smooth={true} duration={800}>
+          <button className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-xl py-2 px-6 transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg">
+            Connect With Me
+          </button>
+        </Link>
 
         <button
           onClick={handleDownloadResume}
-        className="relative py-2 px-6 rounded-xl text-white bg-clip-text bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 border border-[#DB4BB0] transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg">
+          className="relative py-2 px-6 rounded-xl text-white bg-clip-text bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 border border-[#DB4BB0] transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg"
+        >
           <span className="absolute inset-0 rounded-xl border-[#DB4BB0]"></span>
           My Resume
         </button>

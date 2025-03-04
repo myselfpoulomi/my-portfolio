@@ -1,11 +1,26 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-scroll";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const [scrolling, setScrolling] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolling(window.scrollY > 50);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
-    <nav className="w-full text-white bg-transparent">
+    <nav
+      className={`w-full text-white sticky top-0 z-50 transition-all duration-300 ${
+        scrolling ? "bg-[#161513] bg-opacity-90 shadow-md" : "bg-transparent"
+      }`}
+    >
       <div className="flex items-center justify-between md:justify-evenly px-6 py-6 md:px-10">
         {/* Logo / Brand Name */}
         <div className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
@@ -38,9 +53,11 @@ function Navbar() {
 
         {/* Button (Desktop Only) */}
         <div className="hidden md:flex">
-          <button className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-xl py-2 px-6 transition-transform transform hover:scale-105 duration-200 ease-linear">
-            Connect With Me
-          </button>
+          <Link to="contact" smooth={true} duration={800}>
+            <button className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-xl py-2 px-6 transition-transform transform hover:scale-105 duration-200 ease-linear">
+              Connect With Me
+            </button>
+          </Link>
         </div>
       </div>
 
@@ -60,9 +77,11 @@ function Navbar() {
               </Link>
             </li>
           ))}
-          <button className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-xl p-2 px-6">
-            Connect With Me
-          </button>
+          <Link to="contact" smooth={true} duration={800} onClick={() => setIsOpen(false)}>
+            <button className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-xl p-2 px-6">
+              Connect With Me
+            </button>
+          </Link>
         </ul>
       )}
     </nav>
