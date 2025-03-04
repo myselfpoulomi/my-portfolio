@@ -58,7 +58,7 @@ function Home() {
           className="relative py-2 px-6 rounded-xl text-white bg-clip-text bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 border border-[#DB4BB0] transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg"
         >
           <span className="absolute inset-0 rounded-xl border-[#DB4BB0]"></span>
-          My Resume
+          My Resume hi
         </button>
       </div>
     </div>
