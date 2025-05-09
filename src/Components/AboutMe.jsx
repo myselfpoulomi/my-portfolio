@@ -26,10 +26,7 @@ function AboutMe() {
         {/* About Me Text */}
         <div className="w-full md:w-[55%] text-[18px] md:text-[22px] font-light text-zinc-200 flex flex-col gap-9">
           <p>
-            I'm a Frontend Developer who loves building clean, responsive, and
-            user-friendly websites. I work with React.js, HTML, CSS, JavaScript,
-            Tailwind, and Firebase to create smooth and interactive web
-            experiences.
+          I'm a Full-Stack Developer who loves building clean, responsive, and user-friendly websites. I work with React.js, HTML, CSS, JavaScript, and Tailwind on the frontend, and use Node.js, Express.js and MongoDB on the backend to create smooth and interactive web experiences.
           </p>
           <p>
             I enjoy turning ideas into reality through code, focusing on both
@@ -39,33 +36,31 @@ function AboutMe() {
 
           {/* Skills Progress Bars */}
           <div className="flex flex-col gap-[20px] cursor-pointer">
-            {[
-              { skill: "HTML & CSS", width: "w-[70%]" },
-              { skill: "React Js", width: "w-[60%]" },
-              { skill: "JavaScript", width: "w-[50%]" },
-              { skill: "Next Js", width: "w-[30%]" },
-            ].map(({ skill, width }, index) => (
-              <div
-                key={index}
-                className="flex items-center gap-5"
-              >
-                <p className="min-w-[120px] text-sm md:text-base font-medium">
-                  {skill}
-                </p>
-                <div
-                  className={`h-[6px] md:h-[8px] rounded-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 ${width}`}
-                ></div>
-              </div>
-            ))}
-          </div>
+  {[
+    { skill: "React.js", width: "w-[70%]" },
+    { skill: "Tailwind CSS", width: "w-[70%]" },
+    { skill: "Node.js", width: "w-[65%]" },
+    { skill: "Express.js", width: "w-[60%]" },
+    { skill: "MongoDB", width: "w-[55%]" },
+
+  ].map(({ skill, width }, index) => (
+    <div key={index} className="flex items-center gap-5">
+      <p className="min-w-[140px] text-sm md:text-base font-medium">{skill}</p>
+      <div
+        className={`h-[6px] md:h-[8px] rounded-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 ${width}`}
+      ></div>
+    </div>
+  ))}
+</div>
+
         </div>
       </div>
       <div className="w-[80%] mx-auto flex flex-wrap items-center justify-around gap-4 sm:gap-9 text-center text-white mt-24 ">
   {[
-    { number: "4320hr+", label: "Coding" },
     { number: "120,349+", label: "Lines Of Code" },
     { number: "Active since", label: "2024" },
     { number: "Last commit", label: "2hr ago" },
+    { number: "10+", label: "Projects Completed" },
   ].map(({ number, label }, index) => (
     <React.Fragment key={index}>
       <div className="flex flex-col items-center gap-1 px-2 transition-transform duration-300 hover:scale-110">

@@ -32,16 +32,13 @@ function Home() {
             </h1>
           </div>
           <div>
-            <h1> a Frontend Developer</h1>
+            <h1> a FullStack Developer</h1>
           </div>
         </div>
         <div className=" flex justify-center items-center">
-          <div className="md:w-[80%] w-[90%]">
+          <div className="md:w-[85%] w-[90%]">
             <p className="md:text-[17px] text-[15px] font-light text-center text-zinc-300">
-              I'm a frontend developer who builds websites using React.js, HTML,
-              CSS, and JavaScript. I use Tailwind for styling and Firebase for
-              backend services. I focus on creating clean, responsive, and
-              user-friendly web applications.
+            I'm a full-stack developer who builds clean, responsive web apps using React, Tailwind, and JavaScript on the frontend, with Node.js, Express, and MongoDB on the backend. I deploy using Vercel and Netlify, and focus on creating smooth, user-friendly experiences.
             </p>
           </div>
         </div>
