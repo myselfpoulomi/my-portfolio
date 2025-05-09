@@ -19,7 +19,7 @@ import Netlify from '../assets/icons/Netlify-Dark.svg'
 
 function Techs() {
   return (
-    <div id="techs" className="md:h-[740px] h-[700px]">
+    <div id="techs" className="md:h-[750px] h-[700px] border border-white">
       <div className="text-[32px] md:text-[40px] font-bold text-center md:mt-2 relative mt-36">
         <h1 className="inline-block relative pb-2 text-zinc-200">
           Teachs
@@ -36,7 +36,7 @@ function Techs() {
       </div>
       <div className="h-[430px] flex items-center justify-center w-[100%] md:mt-7 mt-2">
         
-          <div className=" h-[390px] md:w-[50%] w-[90%]  rounded-md bg-[#161513]">
+          <div className=" h-[390px] md:w-[65%] w-[90%]  rounded-md bg-[#161513]">
             {[
               [Reactlogo, ExpressJs, Nodejs, MongoDB],
               [HTML, CSS, Tailwind, JavaScript],
