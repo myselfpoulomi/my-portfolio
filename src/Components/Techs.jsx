@@ -19,7 +19,7 @@ import Netlify from '../assets/icons/Netlify-Dark.svg'
 
 function Techs() {
   return (
-    <div id="techs" className="md:h-[750px] h-[700px] border border-white">
+    <div id="techs" className="md:h-[750px] h-[700px]">
       <div className="text-[32px] md:text-[40px] font-bold text-center md:mt-2 relative mt-36">
         <h1 className="inline-block relative pb-2 text-zinc-200">
           Teachs
