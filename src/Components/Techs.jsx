@@ -11,6 +11,11 @@ import Tailwind from "../assets/icons/TailwindCSS-Dark.svg";
 import Firebase from "../assets/icons/Firebase-Dark.svg";
 import Nextjs from "../assets/icons/NextJS-Dark.svg";
 import Vite from "../assets/icons/Vite-Dark.svg";
+import ExpressJs from '../assets/icons/ExpressJS-Dark.svg'
+import MongoDB from '../assets/icons/MongoDB.svg'
+import Nodejs from '../assets/icons/NodeJS-Dark.svg'
+import Vercel from '../assets/icons/Vercel-Dark.svg'
+import Netlify from '../assets/icons/Netlify-Dark.svg'
 
 function Techs() {
   return (
@@ -33,9 +38,11 @@ function Techs() {
         
           <div className=" h-[390px] md:w-[50%] w-[90%]  rounded-md bg-[#161513]">
             {[
-              [Reactlogo, JavaScript, Tailwind, Firebase],
-              [HTML, CSS, Nextjs, Vite],
-              [C, CPP, Java, GitHub],
+              [Reactlogo, ExpressJs, Nodejs, MongoDB],
+              [HTML, CSS, Tailwind, JavaScript],
+              [C, CPP, Vite, GitHub],
+              [Java,Firebase,Vercel,Netlify]
+              
             ].map((row, rowIndex) => (
               <div
                 key={rowIndex}
