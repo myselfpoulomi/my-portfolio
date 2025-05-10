@@ -63,7 +63,7 @@ function Footer() {
 
         {/* Copyright Text */}
         <div className="text-gray-400 text-sm text-center">
-          <p>© 2024 Poulomi Routh. All rights reserved.</p>
+          <p>© 2025 Poulomi Routh. All rights reserved.</p>
         </div>
       </div>
     </div>
