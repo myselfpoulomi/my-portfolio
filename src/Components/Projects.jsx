@@ -3,9 +3,26 @@ import disney from "../assets/projects/disney-colne.png";
 import netflix from "../assets/projects/netflix-clone.png";
 import vscode from "../assets/projects/vs-code-landing.png";
 import youtube from "../assets/projects/youtube-clone.png";
+import MIND from '../assets/projects/MIND.png'
 import { ArrowUpRight } from "lucide-react";
 
 const projectData = [
+    {
+    title: "Hospital-Management-System",
+    description:
+     "A modern, responsive MERN stack app that simplifies hospital operations—managing doctors, patients, prescriptions, inventory, beds, staff, and finances. With secure role-based login and interactive revenue charts, it ensures a smooth experience for both Admin and Receptionist",
+    tech: ["MERN Stack", "Tailwind"],
+    image: disney,
+    link: "https://github.com/myselfpoulomi/Hospital-Management-mern/",
+  },
+  {
+    title: "MIND-Mental Health Support",
+    description:
+     "Mind is a full stack mental wellness platform designed to support users through mood tracking, meditation, yoga, soothing music, and personalized self-care tools. It features secure user authentication, subscriptions, to-do lists, helpline access, chat support, and the option to book doctor appointments when needed.",
+    tech: ["MERN Stack", "Tailwind"],
+    image: MIND,
+    link: "https://github.com/myselfpoulomi/MIND/",
+  },
   {
     title: "Disney+Hotstar Clone",
     description:
@@ -42,7 +59,7 @@ const projectData = [
 
 function Projects() {
   return (
-    <div id="portfolio" className="h-auto mt-8">
+    <div id="portfolio" className="h-auto mt-36">
       <div className="text-[32px] md:text-[40px] font-bold text-center md:mt-2 relative mt-0">
         <h1 className="inline-block relative pb-2 text-zinc-200">
           My Latest Works
@@ -58,7 +75,7 @@ function Projects() {
               className="border border-zinc-700 h-auto flex flex-col md:flex-row items-center justify-evenly gap-8 p-4 rounded-xl transition-all duration-300 hover:border-zinc-500 hover:shadow-lg md:w-[75%] w-full"
             >
               <div className="w-full md:w-[50%] flex flex-col justify-center items-center gap-2 text-center md:text-left">
-                <h1 className="text-[33px] md:text-[48px] font-semibold text-zinc-300">
+                <h1 className="text-[33px] md:text-[40px] font-semibold text-zinc-300">
                   {project.title}
                 </h1>
                 <p className="text-zinc-300 text-[14px] md:text-[16px] font-light text-center md:text-left">
