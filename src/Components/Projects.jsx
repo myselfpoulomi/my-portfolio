@@ -4,6 +4,7 @@ import netflix from "../assets/projects/netflix-clone.png";
 import vscode from "../assets/projects/vs-code-landing.png";
 import youtube from "../assets/projects/youtube-clone.png";
 import MIND from '../assets/projects/MIND.png';
+import HealthHub from '../assets/projects/healthHub.png'
 import { ArrowUpRight } from "lucide-react";
 
 const projectData = [
@@ -12,7 +13,7 @@ const projectData = [
     description:
       "A modern, responsive MERN stack app that simplifies hospital operations—managing doctors, patients, prescriptions, inventory, beds, staff, and finances. With secure role-based login and interactive revenue charts, it ensures a smooth experience for both Admin and Receptionist.",
     tech: ["MERN Stack", "Tailwind"],
-    image: disney,
+    image: HealthHub,
     link: "https://github.com/myselfpoulomi/Hospital-Management-mern/",
   },
   {
