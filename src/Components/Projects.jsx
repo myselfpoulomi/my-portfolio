@@ -14,7 +14,7 @@ const projectData = [
       "A modern, responsive MERN stack app that simplifies hospital operations—managing doctors, patients, prescriptions, inventory, beds, staff, and finances. With secure role-based login and interactive revenue charts, it ensures a smooth experience for both Admin and Receptionist.",
     tech: ["MERN Stack", "Tailwind"],
     image: HealthHub,
-    link: "https://github.com/myselfpoulomi/Hospital-Management-mern/",
+    link: "https://hospital-management-mern-8st2.vercel.app/",
   },
   {
     title: "MIND-Mental Health Support",
