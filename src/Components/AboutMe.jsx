@@ -5,7 +5,7 @@ function AboutMe() {
   return (
     <div
       id="about"
-      className="text-white mt-5 px-8 md:px-12 lg:px-20 md:h-[800px] h-[750px] flex flex-col items-center border border-white"
+      className="text-white mt-5 px-8 md:px-12 lg:px-20 md:h-[800px] h-[750px] flex flex-col items-center"
     >
       {/* Section Title */}
       <div className="text-[32px] md:text-[40px] font-bold text-center mt-2 relative">
