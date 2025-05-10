@@ -1,16 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import disney from "../assets/projects/disney-colne.png";
 import netflix from "../assets/projects/netflix-clone.png";
 import vscode from "../assets/projects/vs-code-landing.png";
 import youtube from "../assets/projects/youtube-clone.png";
-import MIND from '../assets/projects/MIND.png'
+import MIND from '../assets/projects/MIND.png';
 import { ArrowUpRight } from "lucide-react";
 
 const projectData = [
-    {
+  {
     title: "Hospital-Management-System",
     description:
-     "A modern, responsive MERN stack app that simplifies hospital operations—managing doctors, patients, prescriptions, inventory, beds, staff, and finances. With secure role-based login and interactive revenue charts, it ensures a smooth experience for both Admin and Receptionist",
+      "A modern, responsive MERN stack app that simplifies hospital operations—managing doctors, patients, prescriptions, inventory, beds, staff, and finances. With secure role-based login and interactive revenue charts, it ensures a smooth experience for both Admin and Receptionist.",
     tech: ["MERN Stack", "Tailwind"],
     image: disney,
     link: "https://github.com/myselfpoulomi/Hospital-Management-mern/",
@@ -18,7 +18,7 @@ const projectData = [
   {
     title: "MIND-Mental Health Support",
     description:
-     "Mind is a full stack mental wellness platform designed to support users through mood tracking, meditation, yoga, soothing music, and personalized self-care tools. It features secure user authentication, subscriptions, to-do lists, helpline access, chat support, and the option to book doctor appointments when needed.",
+      "Mind is a full stack mental wellness platform designed to support users through mood tracking, meditation, yoga, soothing music, and personalized self-care tools.",
     tech: ["MERN Stack", "Tailwind"],
     image: MIND,
     link: "https://github.com/myselfpoulomi/MIND/",
@@ -26,7 +26,7 @@ const projectData = [
   {
     title: "Disney+Hotstar Clone",
     description:
-      "Disney+ Hotstar Clone using React.js and Tailwind CSS, capturing the look and feel of the popular streaming platform. With a clean, responsive design, smooth navigation, and dynamic content displays, it delivers a seamless and immersive user experience.",
+      "Disney+ Hotstar Clone using React.js and Tailwind CSS, capturing the look and feel of the popular streaming platform.",
     tech: ["React Js", "Tailwind"],
     image: disney,
     link: "https://project2-clone-movie-app-polu.netlify.app/",
@@ -34,7 +34,7 @@ const projectData = [
   {
     title: "Netflix Clone",
     description:
-      "Netflix Clone built with React.js, Tailwind CSS, and Firebase, offering a sleek and responsive UI. It includes user authentication, secure data storage, and dynamic content rendering, delivering a seamless and immersive streaming experience.",
+      "Netflix Clone built with React.js, Tailwind CSS, and Firebase, offering a sleek and responsive UI.",
     tech: ["React Js", "Tailwind", "Firebase"],
     image: netflix,
     link: "https://github.com/myselfpoulomi/Netflix-Clone-Reactjs",
@@ -42,7 +42,7 @@ const projectData = [
   {
     title: "VS Code Landing Page",
     description:
-      "VS Code Landing Page using HTML and Tailwind CSS, featuring a clean, modern, and fully responsive design. The page highlights VS Code’s key features with a sleek layout and smooth styling, ensuring an intuitive user experience.",
+      "VS Code Landing Page using HTML and Tailwind CSS, featuring a clean, modern, and fully responsive design.",
     tech: ["React Js", "Tailwind"],
     image: vscode,
     link: "https://vscode-landing-page-polu.netlify.app/",
@@ -50,7 +50,7 @@ const projectData = [
   {
     title: "Youtube Clone",
     description:
-      "YouTube Clone using React.js and Tailwind CSS, recreating its modern UI, responsive design, and smooth navigation. It features dynamic video listings, a sleek homepage, and an intuitive user experience, making it feel just like the real platform.",
+      "YouTube Clone using React.js and Tailwind CSS, recreating its modern UI and responsive design.",
     tech: ["React Js", "Tailwind"],
     image: youtube,
     link: "https://project3-video-app-clone-polu.netlify.app/",
@@ -58,6 +58,10 @@ const projectData = [
 ];
 
 function Projects() {
+  const [showAll, setShowAll] = useState(false);
+
+  const displayedProjects = showAll ? projectData : projectData.slice(0, 3);
+
   return (
     <div id="portfolio" className="h-auto mt-36">
       <div className="text-[32px] md:text-[40px] font-bold text-center md:mt-2 relative mt-0">
@@ -69,16 +73,16 @@ function Projects() {
 
       <div className="h-auto w-full flex flex-col items-center justify-around mt-14">
         <div className="w-[90%] flex flex-col justify-center items-center gap-8">
-          {projectData.map((project, index) => (
+          {displayedProjects.map((project, index) => (
             <div
               key={index}
               className="border border-zinc-700 h-auto flex flex-col md:flex-row items-center justify-evenly gap-8 p-4 rounded-xl transition-all duration-300 hover:border-zinc-500 hover:shadow-lg md:w-[75%] w-full"
             >
               <div className="w-full md:w-[50%] flex flex-col justify-center items-center gap-2 text-center md:text-left">
-                <h1 className="text-[33px] md:text-[40px] font-semibold text-zinc-300">
+                <h1 className="text-[26px] md:text-[32px] font-semibold text-zinc-300">
                   {project.title}
                 </h1>
-                <p className="text-zinc-300 text-[14px] md:text-[16px] font-light text-center md:text-left">
+                <p className="text-zinc-300 text-[14px] md:text-[16px] font-light">
                   {project.description}
                 </p>
                 <div className="flex flex-wrap justify-center md:justify-start gap-4 mt-4">
@@ -112,11 +116,17 @@ function Projects() {
               </div>
             </div>
           ))}
-          <div className="flex justify-center items-center h-[100px] w-full">
-            <button className="px-6 py-2 border border-zinc-500 text-zinc-300 bg-transparent backdrop-blur-md hover:bg-white hover:bg-opacity-10 transition-all duration-300 rounded-lg">
-              View More
-            </button>
-          </div>
+
+          {!showAll && (
+            <div className="flex justify-center items-center h-[100px] w-full">
+              <button
+                onClick={() => setShowAll(true)}
+                className="px-6 py-2 border border-zinc-500 text-zinc-300 bg-transparent backdrop-blur-md hover:bg-white hover:bg-opacity-10 transition-all duration-300 rounded-lg"
+              >
+                View More
+              </button>
+            </div>
+          )}
         </div>
       </div>
     </div>
