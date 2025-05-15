@@ -96,6 +96,10 @@ PORTFOLIO-WEBSITE/
 
 git clone https://github.com/your-username/portfolio-website.git
 
+# Navigate into the directory
+
+cd portfolio-website
+
 
 
 
