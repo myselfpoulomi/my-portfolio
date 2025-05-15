@@ -7,23 +7,25 @@ https://myselfpoulomi.vercel.app/
 🧑‍💻 About Me
 I'm a passionate FullStack developer focused on building creative and functional web experiences. This portfolio is a reflection of my journey, skills, and selected projects.
 
-🚀 Features
- -Responsive design for all devices
- -Project showcase with descriptions and links
- -Smooth scrolling and interactive UI
- -Contact form with validation
+✨ Features
+✅ Responsive design for all devices
 
-📁 Folder Structure 
+🖼️ Project showcase with descriptions and links
+
+🎯 Smooth scrolling and interactive UI
+
+📬 Contact form with validation
+
+📁 Folder Structure
 PORTFOLIO-WEBSITE/
-│
-├── public/                 # Static public assets
+├── public/                     # Static public assets
 ├── src/
-│   ├── assets/             # Images, icons, and resume
+│   ├── assets/                 # Images, icons, and resume
 │   │   ├── icons/
 │   │   ├── projects/
 │   │   ├── profilepic.jpg
 │   │   └── RESUME_POULOMI.pdf
-│   ├── Components/         # Reusable React components
+│   ├── Components/             # Reusable React components
 │   │   ├── AboutMe.jsx
 │   │   ├── ContactMe.jsx
 │   │   ├── Footer.jsx
@@ -31,14 +33,14 @@ PORTFOLIO-WEBSITE/
 │   │   ├── Navbar.jsx
 │   │   ├── Projects.jsx
 │   │   └── Techs.jsx
-│   ├── App.jsx             # Main app component
-│   ├── index.css           # Custom styles
-│   └── main.jsx            # Entry point
-│
+│   ├── App.jsx                 # Main app component
+│   ├── index.css               # Custom styles
+│   └── main.jsx                # Entry point
 ├── .gitignore
 ├── index.html
 ├── package.json
 ├── tailwind.config.js
 ├── vite.config.js
 └── README.md
+
 
