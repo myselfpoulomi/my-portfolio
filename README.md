@@ -1,4 +1,4 @@
-ssdds💼 Portfolio - Poulomi Routh 
+💼 Portfolio - Poulomi Routh 
 Welcome to my personal portfolio website! This project showcases my work, skills, and background in web development. Designed to be clean, responsive, and user-friendly.
 
 🌐 Live Demo 
@@ -10,13 +10,17 @@ I'm a passionate FullStack developer focused on building creative and functional
 
 ✨ Features
 
-✅ Responsive design for all devices
+⚡ Fast and responsive design
 
-🖼️ Project showcase with descriptions and links
+🌙 Dark mode ready (if applicable)
 
-🎯 Smooth scrolling and interactive UI
+💬 Contact form
 
-📬 Contact form with validation
+📁 Resume download
+
+🧱 Modular component structure
+
+🖼️ Project showcase with images and details
 
 🛠️ Built With
 
@@ -87,6 +91,7 @@ PORTFOLIO-WEBSITE/
 
 
 📫 Contact
+
 Feel free to reach out via the Contact Form or email me at poulomirouth12@gmail.com
 
 
