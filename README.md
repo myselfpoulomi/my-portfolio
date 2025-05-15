@@ -101,6 +101,10 @@ Navigate into the directory
 
 cd portfolio-website
 
+// Install dependencies
+
+npm install
+
 
 
 
