@@ -24,7 +24,7 @@ I'm a passionate FullStack developer focused on building creative and functional
 🖼️ Project showcase with images and details
 
 
-🛠️ Built With
+# 🛠️ Built With
 
  -HTML5, CSS3, JavaScript
 
