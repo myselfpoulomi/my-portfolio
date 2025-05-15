@@ -14,8 +14,8 @@ function Footer() {
               {"<Poulomi/>"}
             </div>
             <p className="text-gray-300 md:font-light max-w-[600px] mx-auto md:mx-0 font-extralight ">
-              I am a frontend developer from Kolkata, India. I work with
-              React.js, HTML, CSS, JavaScript, Tailwind, and Firebase. Let's
+              I am a FullStack developer from Kolkata, India. I work with
+              React js, Node js , Express js , Mongodb , Tailwind, and Firebase. Let's
               create something together...
             </p>
           </div>
