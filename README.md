@@ -93,18 +93,20 @@ PORTFOLIO-WEBSITE/
 
 # 🚀 Getting Started 
 
-# Clone the repository
+Clone the repository
 
 git clone https://github.com/your-username/portfolio-website.git
 
-# Navigate into the directory
+Navigate into the directory
 
 cd portfolio-website
 
 
 
 
-📫 Contact
+
+
+# 📫 Contact
 
 Feel free to reach out via the Contact Form or email me at poulomirouth12@gmail.com
 
