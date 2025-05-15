@@ -91,7 +91,7 @@ PORTFOLIO-WEBSITE/
 
 └── README.md
 
-🚀 Getting Started 
+# 🚀 Getting Started 
 
 # Clone the repository
 
