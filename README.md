@@ -86,3 +86,7 @@ PORTFOLIO-WEBSITE/
 └── README.md
 
 
+📫 Contact
+Feel free to reach out via the Contact Form or email me at poulomirouth12@gmail.com
+
+
