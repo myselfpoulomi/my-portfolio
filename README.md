@@ -91,13 +91,21 @@ PORTFOLIO-WEBSITE/
 
 # 🚀 Getting Started 
 
-git clone https://github.com/your-username/portfolio-website.git    (Clone the repository)
+Clone the repository
 
-cd portfolio-website   (Navigate into the directory)
+👉 git clone https://github.com/your-username/portfolio-website.git   
 
-npm install   (Install dependencies) 
+Navigate into the directory
 
-npm run dev    (Start the development server)
+👉 cd portfolio-website   
+
+Install dependencies
+
+👉 npm install   
+
+Start the development server
+
+👉 npm run dev    
 
 # 📸 Screenshots
 
