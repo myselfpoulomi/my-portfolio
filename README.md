@@ -7,6 +7,7 @@ https://myselfpoulomi.vercel.app/
 🧑‍💻 About Me
 I'm a passionate FullStack developer focused on building creative and functional web experiences. This portfolio is a reflection of my journey, skills, and selected projects.
 
+
 ✨ Features
 
 ✅ Responsive design for all devices
@@ -17,7 +18,10 @@ I'm a passionate FullStack developer focused on building creative and functional
 
 📬 Contact form with validation
 
+
+
 📁 Folder Structure
+
 
 PORTFOLIO-WEBSITE/
 
