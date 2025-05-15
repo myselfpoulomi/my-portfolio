@@ -101,6 +101,8 @@ npm install   (Install dependencies)
 
 npm run dev    (Start the development server)
 
+# 📸 Screenshots
+
 
 
 
