@@ -38,7 +38,7 @@ I'm a passionate FullStack developer focused on building creative and functional
 
 
 
-📁 Folder Structure
+# 📁 Folder Structure
 
 
 PORTFOLIO-WEBSITE/
