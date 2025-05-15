@@ -1,7 +1,9 @@
 💼 Portfolio - Poulomi Routh 
+
 Welcome to my personal portfolio website! This project showcases my work, skills, and background in web development. Designed to be clean, responsive, and user-friendly.
 
 🌐 Live Demo 
+
 https://myselfpoulomi.vercel.app/ 
 
 🧑‍💻 About Me
@@ -12,8 +14,6 @@ I'm a passionate FullStack developer focused on building creative and functional
 
 ⚡ Fast and responsive design
 
-🌙 Dark mode ready (if applicable)
-
 💬 Contact form
 
 📁 Resume download
@@ -21,6 +21,7 @@ I'm a passionate FullStack developer focused on building creative and functional
 🧱 Modular component structure
 
 🖼️ Project showcase with images and details
+
 
 🛠️ Built With
 
