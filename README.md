@@ -6,7 +6,8 @@ Welcome to my personal portfolio website! This project showcases my work, skills
 
 👉 https://myselfpoulomi.vercel.app/ 
 
-🧑‍💻 About Me
+# 🧑‍💻 About Me
+
 I'm a passionate FullStack developer focused on building creative and functional web experiences. This portfolio is a reflection of my journey, skills, and selected projects.
 
 
