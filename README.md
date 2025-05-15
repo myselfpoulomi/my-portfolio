@@ -18,6 +18,18 @@ I'm a passionate FullStack developer focused on building creative and functional
 
 📬 Contact form with validation
 
+🛠️ Built With
+
+ -HTML5, CSS3, JavaScript
+
+ -React.js (or your framework)
+
+ -Tailwind CSS / Bootstrap / Custom CSS
+
+ -Node.js / Express (if applicable)
+
+ -EmailJS / Formspree (for contact)
+
 
 
 📁 Folder Structure
