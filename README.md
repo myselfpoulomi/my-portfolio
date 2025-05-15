@@ -28,13 +28,11 @@ I'm a passionate FullStack developer focused on building creative and functional
 
  -HTML5, CSS3, JavaScript
 
- -React.js (or your framework)
+ -React.js (framework)
 
- -Tailwind CSS / Bootstrap / Custom CSS
+ -Tailwind CSS (to style)
 
- -Node.js / Express (if applicable)
-
- -EmailJS / Formspree (for contact)
+ -Web3Forms for email API
 
 
 
