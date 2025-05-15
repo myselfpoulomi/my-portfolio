@@ -12,3 +12,5 @@ I'm a passionate FullStack developer focused on building creative and functional
  -Project showcase with descriptions and links
  -Smooth scrolling and interactive UI
  -Contact form with validation
+
+📁 Folder Structure
