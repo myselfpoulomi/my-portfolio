@@ -1,4 +1,4 @@
-💼 Portfolio - Poulomi Routh 
+# 💼 Portfolio - Poulomi Routh 
 
 Welcome to my personal portfolio website! This project showcases my work, skills, and background in web development. Designed to be clean, responsive, and user-friendly.
 
