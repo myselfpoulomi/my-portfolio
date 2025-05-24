@@ -22,7 +22,7 @@ function Techs() {
     <div id="techs" className="md:h-[750px] h-[700px]">
       <div className="text-[32px] md:text-[40px] font-bold text-center md:mt-2 relative mt-36">
         <h1 className="inline-block relative pb-2 text-zinc-200">
-          Teachs
+          Techs
           <span className="rounded absolute left-0 bottom-0 w-full h-1 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500"></span>
         </h1>
       </div>
