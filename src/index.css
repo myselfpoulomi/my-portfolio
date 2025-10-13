@@ -10,16 +10,16 @@ html::-webkit-scrollbar {
 
 :root {
   /* Light theme accents */
-  --color-primary: #e37a2a; /* stronger middle accent for contrast */
-  --color-primary-dark: #b84312; /* stronger dark accent */
-  --color-primary-muted: #c06936; /* stronger muted accent */
+  --color-primary: #f0a05a; /* lighter middle accent for contrast */
+  --color-primary-dark: #d46a32; /* lighter dark accent */
+  --color-primary-muted: #d88a5c; /* lighter muted accent */
 }
 
 /* Dark theme overrides */
 .dark {
-  --color-primary: #e07521;
-  --color-primary-dark: #9c3d13;
-  --color-primary-muted: #8f542a;
+  --color-primary: #f08a41;
+  --color-primary-dark: #c55a23;
+  --color-primary-muted: #b5744a;
 }
 
 .theme-gradient-text {

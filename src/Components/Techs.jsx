@@ -36,7 +36,7 @@ function Techs() {
       </div>
       <div className="flex items-center justify-center w-[100%] md:mt-7 mt-4">
         <div className="w-[92%] md:w-[80%] lg:w-[65%] rounded-md bg-white dark:bg-[#161513] animate-fadeInUp p-4 md:p-6">
-          <div className="grid grid-cols-4 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-6 md:gap-8 place-items-center">
+          <div className="grid grid-cols-4 gap-6 md:gap-8 place-items-center">
             {[Reactlogo, ExpressJs, Nodejs, MongoDB, HTML, CSS, Tailwind, JavaScript, C, CPP, Vite, GitHub, Java, Firebase, Vercel, Netlify].map((imgSrc, index) => (
               <img
                 key={index}
