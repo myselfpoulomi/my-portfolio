@@ -58,18 +58,18 @@ function ContactMe() {
       className="flex flex-col items-center mt-16 py-6 justify-center"
     >
       <div className="text-[28px] md:text-[40px] font-bold text-center relative">
-        <h1 className="inline-block relative pb-2 text-zinc-200">
+        <h1 className="inline-block relative pb-2 text-neutral-900 dark:text-zinc-200">
           Contact Me
           <span className="rounded absolute left-0 bottom-0 w-full h-1 theme-gradient-bg"></span>
         </h1>
       </div>
-      <div className="w-full px-[10%] md:mt-20 mt-9 flex flex-wrap md:flex-nowrap justify-evenly gap-10">
+          <div className="w-full px-[10%] md:mt-20 mt-9 flex flex-wrap md:flex-nowrap justify-evenly gap-10">
         {/* Left Section - Contact Info */}
         <div className="w-full md:w-[25%] flex flex-col gap-6 text-start md:mt-0">
           <span className="theme-gradient-text w-fit font-bold text-[40px] md:text-[50px]">
             Let's Talk
           </span>
-          <p className="text-zinc-300 text-[16px] md:text-[17px] font-light">
+            <p className="text-neutral-700 dark:text-zinc-300 text-[16px] md:text-[17px] font-light">
             I'm currently available to take on new projects, so feel free to
             send me a message about anything that you want me to work on. You
             can contact anytime.
@@ -79,9 +79,9 @@ function ContactMe() {
             <img
               src={email}
               alt="Email Icon"
-              className="w-[22px] md:w-[30px]"
+              className="w-[22px] md:w-[30px] brightness-0 dark:invert"
             />
-            <p className="text-zinc-300 text-[17px]">
+            <p className="text-neutral-800 dark:text-zinc-300 text-[17px]">
               poulomirouth12@gmail.com
             </p>
           </div>
@@ -89,16 +89,16 @@ function ContactMe() {
             <img
               src={location}
               alt="Location Icon"
-              className="md:w-[22px] w-[17px]"
+              className="md:w-[22px] w-[17px] brightness-0 dark:invert"
             />
-            <p className="text-zinc-300 text-[17px]">Kolkata, India</p>
+            <p className="text-neutral-800 dark:text-zinc-300 text-[17px]">Kolkata, India</p>
           </div>
         </div>
         <Toaster richColors position="top-right" closeButton />
         {/* Right Section - Form */}
         <form
           onSubmit={onSubmit}
-          className="w-full md:w-[60%] px-4 md:px-6 text-zinc-300 flex flex-col gap-4 md:gap-5"
+          className="w-full md:w-[60%] px-4 md:px-6 text-neutral-800 dark:text-zinc-300 flex flex-col gap-4 md:gap-5"
         >
           <div>
             <label className="mb-1">Your Name</label>
@@ -106,7 +106,7 @@ function ContactMe() {
               type="text"
               name="name"
               placeholder="Enter your name"
-              className="w-full p-2 bg-[#201e1b] text-white border border-gray-700 rounded"
+              className="w-full p-2 bg-white text-neutral-900 dark:bg-[#201e1b] dark:text-white border border-gray-300 dark:border-gray-700 rounded"
             />
           </div>
           <div>
@@ -115,14 +115,14 @@ function ContactMe() {
               type="email"
               name="email"
               placeholder="Enter your email"
-              className="w-full p-2 bg-[#201e1b] text-white border border-gray-700 rounded"
+              className="w-full p-2 bg-white text-neutral-900 dark:bg-[#201e1b] dark:text-white border border-gray-300 dark:border-gray-700 rounded"
             />
           </div>
           <div>
             <label className="mb-1">Write your message here</label>
             <textarea
               placeholder="Enter your message"
-              className="w-full p-2 bg-[#201e1b] text-white border border-gray-700 rounded h-32"
+              className="w-full p-2 bg-white text-neutral-900 dark:bg-[#201e1b] dark:text-white border border-gray-300 dark:border-gray-700 rounded h-32"
               name="massage"
             ></textarea>
           </div>

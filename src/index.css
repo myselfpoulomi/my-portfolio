@@ -9,9 +9,17 @@ html::-webkit-scrollbar {
   }
 
 :root {
-  --color-primary: #e07521; /* middle accent */
-  --color-primary-dark: #9c3d13; /* darker accent */
-  --color-primary-muted: #8f542a; /* muted accent */
+  /* Light theme accents */
+  --color-primary: #e37a2a; /* stronger middle accent for contrast */
+  --color-primary-dark: #b84312; /* stronger dark accent */
+  --color-primary-muted: #c06936; /* stronger muted accent */
+}
+
+/* Dark theme overrides */
+.dark {
+  --color-primary: #e07521;
+  --color-primary-dark: #9c3d13;
+  --color-primary-muted: #8f542a;
 }
 
 .theme-gradient-text {

@@ -66,7 +66,7 @@ function Projects() {
   return (
     <div id="portfolio" className="h-auto mt-24 md:mt-36 px-4">
       <div className="text-[32px] md:text-[40px] font-bold text-center md:mt-2 relative mt-0">
-        <h1 className="inline-block relative pb-2 text-zinc-200">
+        <h1 className="inline-block relative pb-2 text-neutral-900 dark:text-zinc-200">
           My Latest Works
           <span className="rounded absolute left-0 bottom-0 w-full h-1 theme-gradient-bg"></span>
         </h1>
@@ -80,17 +80,17 @@ function Projects() {
               className="border border-zinc-700 h-auto flex flex-col md:flex-row items-center justify-between gap-6 md:gap-8 p-4 md:p-6 rounded-xl transition-all duration-300 hover:border-zinc-500 hover:shadow-lg md:w-[75%] w-full"
             >
               <div className="w-full md:w-[50%] flex flex-col justify-center items-center gap-2 text-center md:text-left">
-                <h1 className="text-[22px] md:text-[28px] lg:text-[32px] font-semibold text-zinc-300 text-center md:text-left">
+                <h1 className="text-[22px] md:text-[28px] lg:text-[32px] font-semibold text-neutral-900 dark:text-zinc-300 text-center md:text-left">
                   {project.title}
                 </h1>
-                <p className="text-zinc-300 text-[14px] md:text-[16px] font-light">
+                <p className="text-neutral-800 dark:text-zinc-300 text-[14px] md:text-[16px] font-light">
                   {project.description}
                 </p>
                 <div className="flex flex-wrap justify-center md:justify-start gap-4 mt-4">
                   {project.tech.map((tech, i) => (
                     <button
                       key={i}
-                      className="px-4 md:px-6 py-2 border border-zinc-500 text-zinc-300 rounded-full bg-transparent backdrop-blur-md hover:bg-white hover:bg-opacity-10 transition-all duration-300"
+                      className="px-4 md:px-6 py-2 border border-neutral-300 dark:border-zinc-500 text-neutral-800 dark:text-zinc-300 rounded-full bg-transparent backdrop-blur-md hover:bg-black/5 dark:hover:bg-white/10 transition-all duration-300"
                     >
                       {tech}
                     </button>
@@ -122,7 +122,7 @@ function Projects() {
             <div className="flex justify-center items-center h-[80px] md:h-[100px] w-full">
               <button
                 onClick={() => setShowAll(true)}
-                className="px-6 py-2 border border-zinc-500 text-zinc-300 bg-transparent backdrop-blur-md hover:bg-white hover:bg-opacity-10 transition-all duration-300 rounded-lg"
+                className="px-6 py-2 rounded-lg text-white theme-gradient-bg shadow-sm hover:opacity-90 transition-all duration-300"
               >
                 View More
               </button>

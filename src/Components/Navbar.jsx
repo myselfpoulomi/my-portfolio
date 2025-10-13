@@ -1,8 +1,15 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-scroll";
+import { Sun, Moon } from "lucide-react";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const [isDark, setIsDark] = useState(() => {
+    if (typeof window === 'undefined') return true;
+    const stored = localStorage.getItem('theme');
+    if (stored) return stored === 'dark';
+    return window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+  });
   const [scrolling, setScrolling] = useState(false);
 
   useEffect(() => {
@@ -15,10 +22,23 @@ function Navbar() {
     };
   }, []);
 
+  useEffect(() => {
+    const root = document.documentElement;
+    if (isDark) {
+      root.classList.add('dark');
+      localStorage.setItem('theme', 'dark');
+    } else {
+      root.classList.remove('dark');
+      localStorage.setItem('theme', 'light');
+    }
+  }, [isDark]);
+
+  const toggleTheme = () => setIsDark((prev) => !prev);
+
   return (
     <nav
-      className={`w-full text-white sticky top-0 z-50 transition-all duration-300 ${
-        scrolling ? "bg-[#161513] bg-opacity-90 shadow-md" : "bg-transparent"
+      className={`w-full sticky top-0 z-50 transition-all duration-300 ${
+        scrolling ? "bg-white/80 dark:bg-[#161513]/90 shadow-md" : "bg-transparent"
       }`}
     >
       <div className="flex items-center justify-between md:justify-evenly px-6 py-6 md:px-10">
@@ -27,13 +47,31 @@ function Navbar() {
           {"<Poulomi/>"}
         </div>
 
-        {/* Hamburger Menu (Mobile) */}
-        <button
-          className="block md:hidden text-white focus:outline-none"
-          onClick={() => setIsOpen(!isOpen)}
-        >
-          {isOpen ? "✖" : "☰"}
-        </button>
+        {/* Mobile Controls: Theme toggle + Hamburger */}
+        <div className="flex items-center gap-3 md:hidden">
+          <button
+            onClick={toggleTheme}
+            aria-label="Toggle Theme"
+            aria-pressed={isDark}
+            className="relative w-14 h-8 rounded-full bg-neutral-200 dark:bg-zinc-700 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-400"
+          >
+            <span
+              className={`absolute top-1 left-1 h-6 w-6 rounded-full bg-white dark:bg-black transition-transform duration-300 shadow-sm flex items-center justify-center ${isDark ? 'translate-x-6' : 'translate-x-0'}`}
+            >
+              {isDark ? (
+                <Moon size={16} className="text-neutral-200" />
+              ) : (
+                <Sun size={16} className="text-neutral-800" />
+              )}
+            </span>
+          </button>
+          <button
+            className="block md:hidden text-neutral-800 dark:text-white focus:outline-none"
+            onClick={() => setIsOpen(!isOpen)}
+          >
+            {isOpen ? "✖" : "☰"}
+          </button>
+        </div>
 
         {/* Navigation Links (Hidden in Mobile, Visible in Desktop) */}
         <ul className="hidden md:flex list-none justify-evenly space-x-6">
@@ -51,10 +89,26 @@ function Navbar() {
           ))}
         </ul>
 
-        {/* Button (Desktop Only) */}
-        <div className="hidden md:flex">
+        {/* Theme Toggle + Button (Desktop Only) */}
+        <div className="hidden md:flex items-center gap-3">
+          <button
+            onClick={toggleTheme}
+            aria-label="Toggle Theme"
+            aria-pressed={isDark}
+            className="relative w-14 h-8 rounded-full bg-neutral-200 dark:bg-zinc-700 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-400"
+          >
+            <span
+              className={`absolute top-1 left-1 h-6 w-6 rounded-full bg-white dark:bg-black transition-transform duration-300 shadow-sm flex items-center justify-center ${isDark ? 'translate-x-6' : 'translate-x-0'}`}
+            >
+              {isDark ? (
+                <Moon size={16} className="text-neutral-200" />
+              ) : (
+                <Sun size={16} className="text-neutral-800" />
+              )}
+            </span>
+          </button>
           <Link to="contact" smooth={true} duration={800}>
-            <button className="rounded-xl py-2 px-6 transition-transform transform hover:scale-105 duration-200 ease-linear theme-gradient-bg">
+            <button className="rounded-xl py-2 px-6 transition-transform transform hover:scale-105 duration-200 ease-linear theme-gradient-bg text-white">
               Connect With Me
             </button>
           </Link>
@@ -63,7 +117,7 @@ function Navbar() {
 
       {/* Mobile Menu (Visible when Open) */}
       {isOpen && (
-        <ul className="md:hidden flex flex-col items-center space-y-4 py-4 bg-[#111110] bg-opacity-80">
+        <ul className="md:hidden flex flex-col items-center space-y-4 py-4 bg-white/90 dark:bg-[#111110]/80">
           {["home", "about", "techs", "portfolio", "contact"].map((item) => (
             <li key={item} className="cursor-pointer text-lg">
               <Link
@@ -77,8 +131,9 @@ function Navbar() {
               </Link>
             </li>
           ))}
+          
           <Link to="contact" smooth={true} duration={800} onClick={() => setIsOpen(false)}>
-            <button className="theme-gradient-bg rounded-xl p-2 px-6">
+            <button className="theme-gradient-bg text-white rounded-xl p-2 px-6">
               Connect With Me
             </button>
           </Link>

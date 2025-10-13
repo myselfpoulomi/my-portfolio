@@ -9,7 +9,7 @@ import Footer from './Components/Footer'
 
 function App() {
   return (
-    <div className='bg-[#161513] animate-fadeIn'>
+    <div className='min-h-screen bg-white text-neutral-900 dark:bg-[#161513] dark:text-white animate-fadeIn'>
       <Navbar/>
       <Home/>
       <AboutMe/>

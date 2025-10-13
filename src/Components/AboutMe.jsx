@@ -9,7 +9,7 @@ function AboutMe() {
     >
       {/* Section Title */}
       <div className="text-[32px] md:text-[40px] font-bold text-center mt-2 relative">
-        <h1 className="inline-block relative pb-2 text-zinc-200">
+        <h1 className="inline-block relative pb-2 text-neutral-900 dark:text-zinc-200">
           About Me
           <span className="rounded absolute left-0 bottom-0 w-full h-1 theme-gradient-bg"></span>
         </h1>
@@ -28,7 +28,7 @@ function AboutMe() {
         </div>
 
         {/* About Me Text */}
-        <div className="w-full md:w-[55%] text-[16px] md:text-[20px] font-light text-zinc-200 flex flex-col gap-6">
+        <div className="w-full md:w-[55%] text-[16px] md:text-[20px] font-light text-neutral-800 dark:text-zinc-200 flex flex-col gap-6">
           <p>
             I'm a Full-Stack Developer who loves building clean, responsive, and
             user-friendly websites. I work with React.js,
@@ -75,7 +75,7 @@ function AboutMe() {
               <h1 className="text-lg sm:text-xl md:text-2xl font-semibold theme-gradient-text">
                 {number}
               </h1>
-              <p className="text-xs sm:text-sm md:text-base text-gray-300">
+              <p className="text-xs sm:text-sm md:text-base text-neutral-600 dark:text-gray-300">
                 {label}
               </p>
             </div>
