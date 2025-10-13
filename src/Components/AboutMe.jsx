@@ -5,7 +5,7 @@ function AboutMe() {
   return (
     <div
       id="about"
-      className="text-white mt-5 px-8 md:px-12 lg:px-20 md:h-[800px] h-[750px] flex flex-col items-center "
+      className="text-white mt-5 px-6 md:px-12 lg:px-20 py-10 flex flex-col items-center"
     >
       {/* Section Title */}
       <div className="text-[32px] md:text-[40px] font-bold text-center mt-2 relative">
@@ -16,10 +16,10 @@ function AboutMe() {
       </div>
 
       {/* Content Container */}
-      <div className="flex flex-col md:flex-row items-center justify-center gap-20 md:gap-20 mt-20 h-[450px]">
+      <div className="flex flex-col md:flex-row items-center justify-center gap-12 md:gap-20 mt-14">
 
         {/* Profile Picture */}
-        <div className="w-[80%] sm:w-[50%] md:w-[30%] lg:w-[20%] hidden sm:flex justify-center ">
+        <div className="w-[80%] sm:w-[60%] md:w-[40%] lg:w-[28%] hidden sm:flex justify-center">
           <img
             className="w-full max-w-[270px] h-auto rounded-lg"
             src={profilepic}
@@ -28,7 +28,7 @@ function AboutMe() {
         </div>
 
         {/* About Me Text */}
-        <div className="w-full md:w-[55%] text-[18px] md:text-[22px] font-light text-zinc-200 flex flex-col gap-9">
+        <div className="w-full md:w-[55%] text-[16px] md:text-[20px] font-light text-zinc-200 flex flex-col gap-6">
           <p>
             I'm a Full-Stack Developer who loves building clean, responsive, and
             user-friendly websites. I work with React.js,
@@ -43,21 +43,21 @@ function AboutMe() {
           </p>
 
           {/* Skills Progress Bars */}
-          <div className="flex flex-col gap-[20px] cursor-pointer">
+          <div className="flex flex-col gap-[16px] cursor-pointer">
             {[
-              { skill: "React.js", width: "w-[70%]" },
-              { skill: "Tailwind CSS", width: "w-[70%]" },
-              { skill: "Node.js", width: "w-[65%]" },
-              { skill: "Express.js", width: "w-[60%]" },
-              { skill: "MongoDB", width: "w-[55%]" },
-            ].map(({ skill, width }, index) => (
-              <div key={index} className="flex items-center gap-5">
-                <p className="min-w-[140px] text-sm md:text-base font-medium">
+              { skill: "React.js", widthSm: "w-[85%]", widthMd: "md:w-[70%]" },
+              { skill: "Tailwind CSS", widthSm: "w-[80%]", widthMd: "md:w-[70%]" },
+              { skill: "Node.js", widthSm: "w-[70%]", widthMd: "md:w-[65%]" },
+              { skill: "Express.js", widthSm: "w-[65%]", widthMd: "md:w-[60%]" },
+              { skill: "MongoDB", widthSm: "w-[60%]", widthMd: "md:w-[55%]" },
+            ].map(({ skill, widthSm, widthMd }, index) => (
+              <div key={index} className="flex items-center gap-5 w-full">
+                <p className="min-w-[120px] md:min-w-[140px] text-sm md:text-base font-medium">
                   {skill}
                 </p>
-                <div
-                  className={`h-[6px] md:h-[8px] rounded-full ${width} theme-gradient-bg`}
-                ></div>
+                <div className="flex-1 h-[6px] md:h-[8px] rounded-full overflow-visible">
+                  <div className={`h-full ${widthSm} ${widthMd} theme-gradient-bg rounded-full`}></div>
+                </div>
               </div>
             ))}
           </div>

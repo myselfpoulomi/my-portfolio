@@ -15,8 +15,8 @@ function Home() {
   };
 
   return (
-    <div id="home" className="md:h-[770px] h-[600px] text-white flex items-center justify-center flex-col gap-1 px-6 md:px-0 mt-3">
-      <div className=" flex flex-col justify-center items-center md:gap-2 gap-5 md:h-[580px] h-[500px] w-full  md:w-[40%]">
+    <div id="home" className="text-white flex items-center justify-center flex-col gap-4 px-6 md:px-8 lg:px-0 mt-6 py-10 md:py-16">
+      <div className="flex flex-col justify-center items-center md:gap-3 gap-5 w-full md:w-[60%] lg:w-[40%]">
         <img
           src={profilepic}
           alt="Description of image"
@@ -35,15 +35,15 @@ function Home() {
             <h1> a FullStack Developer</h1>
           </div>
         </div>
-        <div className=" flex justify-center items-center">
-          <div className="md:w-[85%] w-[90%] animate-fadeInUp">
+        <div className="flex justify-center items-center w-full">
+          <div className="w-full max-w-[720px] animate-fadeInUp">
             <p className="md:text-[17px] text-[15px] font-light text-center text-zinc-300">
             I'm a full-stack developer who builds clean, responsive web apps using React, Tailwind, and JavaScript on the frontend, with Node.js, Express, and MongoDB on the backend. I deploy using Vercel and Netlify, and focus on creating smooth, user-friendly experiences.
             </p>
           </div>
         </div>
       </div>
-      <div className="h-[40px] w-full max-w-[350px] md:w-[30%] flex items-center justify-evenly mt-0">
+      <div className="w-full max-w-[520px] flex flex-wrap gap-3 items-center justify-center md:justify-evenly mt-2">
         <Link to="contact" smooth={true} duration={800}>
           <button className="rounded-xl py-2 px-6 transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg theme-gradient-bg">
             Connect With Me

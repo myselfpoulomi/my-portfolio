@@ -19,7 +19,7 @@ import Netlify from '../assets/icons/Netlify-Dark.svg'
 
 function Techs() {
   return (
-    <div id="techs" className="md:h-[750px] h-[700px]">
+    <div id="techs" className="py-12 md:py-16">
       <div className="text-[32px] md:text-[40px] font-bold text-center md:mt-2 relative mt-36">
         <h1 className="inline-block relative pb-2 text-zinc-200">
           Techs
@@ -34,32 +34,19 @@ function Techs() {
           to work with
         </h1>
       </div>
-      <div className="h-[430px] flex items-center justify-center w-[100%] md:mt-7 mt-2">
-        
-          <div className=" h-[390px] md:w-[65%] w-[90%]  rounded-md bg-[#161513] animate-fadeInUp">
-            {[
-              [Reactlogo, ExpressJs, Nodejs, MongoDB],
-              [HTML, CSS, Tailwind, JavaScript],
-              [C, CPP, Vite, GitHub],
-              [Java,Firebase,Vercel,Netlify]
-              
-            ].map((row, rowIndex) => (
-              <div
-                key={rowIndex}
-                className="h-[120px] flex items-center justify-evenly gap-5"
-              >
-                {row.map((imgSrc, index) => (
-                  <img
-                    key={index}
-                    className="h-[50px] w-[50px] transition-transform duration-500 ease-in-out hover:scale-110 hover:shadow-xl"
-                    src={imgSrc}
-                    alt=""
-                  />
-                ))}
-              </div>
+      <div className="flex items-center justify-center w-[100%] md:mt-7 mt-4">
+        <div className="w-[92%] md:w-[80%] lg:w-[65%] rounded-md bg-[#161513] animate-fadeInUp p-4 md:p-6">
+          <div className="grid grid-cols-4 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-6 md:gap-8 place-items-center">
+            {[Reactlogo, ExpressJs, Nodejs, MongoDB, HTML, CSS, Tailwind, JavaScript, C, CPP, Vite, GitHub, Java, Firebase, Vercel, Netlify].map((imgSrc, index) => (
+              <img
+                key={index}
+                className="h-10 w-10 md:h-12 md:w-12 transition-transform duration-500 ease-in-out hover:scale-110 hover:shadow-xl"
+                src={imgSrc}
+                alt=""
+              />
             ))}
           </div>
-       
+        </div>
       </div>
     </div>
   );

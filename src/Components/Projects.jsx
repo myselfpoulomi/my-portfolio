@@ -64,7 +64,7 @@ function Projects() {
   const displayedProjects = showAll ? projectData : projectData.slice(0, 3);
 
   return (
-    <div id="portfolio" className="h-auto mt-36">
+    <div id="portfolio" className="h-auto mt-24 md:mt-36 px-4">
       <div className="text-[32px] md:text-[40px] font-bold text-center md:mt-2 relative mt-0">
         <h1 className="inline-block relative pb-2 text-zinc-200">
           My Latest Works
@@ -72,15 +72,15 @@ function Projects() {
         </h1>
       </div>
 
-      <div className="h-auto w-full flex flex-col items-center justify-around mt-14">
-        <div className="w-[90%] flex flex-col justify-center items-center gap-8">
+      <div className="h-auto w-full flex flex-col items-center justify-around mt-10 md:mt-14">
+        <div className="w-full md:w-[90%] flex flex-col justify-center items-center gap-8">
           {displayedProjects.map((project, index) => (
             <div
               key={index}
-              className="border border-zinc-700 h-auto flex flex-col md:flex-row items-center justify-evenly gap-8 p-4 rounded-xl transition-all duration-300 hover:border-zinc-500 hover:shadow-lg md:w-[75%] w-full"
+              className="border border-zinc-700 h-auto flex flex-col md:flex-row items-center justify-between gap-6 md:gap-8 p-4 md:p-6 rounded-xl transition-all duration-300 hover:border-zinc-500 hover:shadow-lg md:w-[75%] w-full"
             >
               <div className="w-full md:w-[50%] flex flex-col justify-center items-center gap-2 text-center md:text-left">
-                <h1 className="text-[26px] md:text-[32px] font-semibold text-zinc-300">
+                <h1 className="text-[22px] md:text-[28px] lg:text-[32px] font-semibold text-zinc-300 text-center md:text-left">
                   {project.title}
                 </h1>
                 <p className="text-zinc-300 text-[14px] md:text-[16px] font-light">
@@ -90,14 +90,14 @@ function Projects() {
                   {project.tech.map((tech, i) => (
                     <button
                       key={i}
-                      className="px-6 py-2 border border-zinc-500 text-zinc-300 rounded-full bg-transparent backdrop-blur-md hover:bg-white hover:bg-opacity-10 transition-all duration-300"
+                      className="px-4 md:px-6 py-2 border border-zinc-500 text-zinc-300 rounded-full bg-transparent backdrop-blur-md hover:bg-white hover:bg-opacity-10 transition-all duration-300"
                     >
                       {tech}
                     </button>
                   ))}
                 </div>
               </div>
-              <div className="w-full md:w-[35%] flex justify-center items-center relative group">
+              <div className="w-full md:w-[40%] lg:w-[35%] flex justify-center items-center relative group">
                 <a
                   href={project.link}
                   target="_blank"
@@ -107,7 +107,7 @@ function Projects() {
                   <img
                     src={project.image}
                     alt={project.title}
-                    className="rounded-md w-full md:w-[475px] h-auto md:h-[230px] transition-all duration-300 ease-in-out transform group-hover:scale-105 group-hover:brightness-110 group-hover:shadow-lg"
+                    className="rounded-md w-full max-w-[520px] h-auto md:h-[230px] transition-all duration-300 ease-in-out transform group-hover:scale-105 group-hover:brightness-110 group-hover:shadow-lg"
                   />
                   <ArrowUpRight
                     className="absolute top-3 right-3 text-white bg-black/50 p-2 rounded-full opacity-0 group-hover:opacity-100 group-hover:scale-110 transition-all duration-300 ease-in-out"
@@ -119,7 +119,7 @@ function Projects() {
           ))}
 
           {!showAll && (
-            <div className="flex justify-center items-center h-[100px] w-full">
+            <div className="flex justify-center items-center h-[80px] md:h-[100px] w-full">
               <button
                 onClick={() => setShowAll(true)}
                 className="px-6 py-2 border border-zinc-500 text-zinc-300 bg-transparent backdrop-blur-md hover:bg-white hover:bg-opacity-10 transition-all duration-300 rounded-lg"
