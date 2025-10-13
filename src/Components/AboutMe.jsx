@@ -11,7 +11,7 @@ function AboutMe() {
       <div className="text-[32px] md:text-[40px] font-bold text-center mt-2 relative">
         <h1 className="inline-block relative pb-2 text-zinc-200">
           About Me
-          <span className="rounded absolute left-0 bottom-0 w-full h-1 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500"></span>
+          <span className="rounded absolute left-0 bottom-0 w-full h-1 theme-gradient-bg"></span>
         </h1>
       </div>
 
@@ -56,7 +56,7 @@ function AboutMe() {
                   {skill}
                 </p>
                 <div
-                  className={`h-[6px] md:h-[8px] rounded-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 ${width}`}
+                  className={`h-[6px] md:h-[8px] rounded-full ${width} theme-gradient-bg`}
                 ></div>
               </div>
             ))}
@@ -72,7 +72,7 @@ function AboutMe() {
         ].map(({ number, label }, index) => (
           <React.Fragment key={index}>
             <div className="flex flex-col items-center gap-1 px-2 transition-transform duration-300 hover:scale-110">
-              <h1 className="text-lg sm:text-xl md:text-2xl font-semibold bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
+              <h1 className="text-lg sm:text-xl md:text-2xl font-semibold theme-gradient-text">
                 {number}
               </h1>
               <p className="text-xs sm:text-sm md:text-base text-gray-300">

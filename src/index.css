@@ -7,3 +7,30 @@ html::-webkit-scrollbar {
     -ms-overflow-style: none;
     scrollbar-width: none;
   }
+
+:root {
+  --color-primary: #e07521; /* middle accent */
+  --color-primary-dark: #9c3d13; /* darker accent */
+  --color-primary-muted: #8f542a; /* muted accent */
+}
+
+.theme-gradient-text {
+  @apply bg-clip-text text-transparent bg-gradient-to-r;
+  background-image: linear-gradient(90deg, var(--color-primary-muted), var(--color-primary), var(--color-primary-dark));
+}
+
+.theme-gradient-bg {
+  background-image: linear-gradient(90deg, var(--color-primary-muted), var(--color-primary), var(--color-primary-dark));
+}
+
+.theme-border {
+  border-color: var(--color-primary);
+}
+
+.animate-fadeIn {
+  animation: fadeIn 800ms ease-out both;
+}
+
+.animate-fadeInUp {
+  animation: fadeInUp 900ms ease-out both;
+}

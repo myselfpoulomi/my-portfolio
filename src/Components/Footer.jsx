@@ -10,7 +10,7 @@ function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-center md:items-start gap-10">
           {/* Left Section */}
           <div className="flex flex-col gap-4 text-left w-full md:w-1/2">
-            <div className="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 w-fit mx-0">
+            <div className="text-3xl font-bold theme-gradient-text w-fit mx-0">
               {"<Poulomi/>"}
             </div>
             <p className="text-gray-300 md:font-light max-w-[600px] mx-auto md:mx-0 font-extralight ">

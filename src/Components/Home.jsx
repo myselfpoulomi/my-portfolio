@@ -26,7 +26,7 @@ function Home() {
           <div className="flex items-center">
             <h1>
               Hey!
-              <span className="ml-2 bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
+              <span className="ml-2 theme-gradient-text">
                 I'm Poulomi
               </span>
             </h1>
@@ -36,7 +36,7 @@ function Home() {
           </div>
         </div>
         <div className=" flex justify-center items-center">
-          <div className="md:w-[85%] w-[90%]">
+          <div className="md:w-[85%] w-[90%] animate-fadeInUp">
             <p className="md:text-[17px] text-[15px] font-light text-center text-zinc-300">
             I'm a full-stack developer who builds clean, responsive web apps using React, Tailwind, and JavaScript on the frontend, with Node.js, Express, and MongoDB on the backend. I deploy using Vercel and Netlify, and focus on creating smooth, user-friendly experiences.
             </p>
@@ -45,16 +45,16 @@ function Home() {
       </div>
       <div className="h-[40px] w-full max-w-[350px] md:w-[30%] flex items-center justify-evenly mt-0">
         <Link to="contact" smooth={true} duration={800}>
-          <button className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-xl py-2 px-6 transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg">
+          <button className="rounded-xl py-2 px-6 transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg theme-gradient-bg">
             Connect With Me
           </button>
         </Link>
 
         <button
           onClick={handleDownloadResume}
-          className="relative py-2 px-6 rounded-xl text-white bg-clip-text bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 border border-[#DB4BB0] transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg"
+          className="relative py-2 px-6 rounded-xl text-white bg-clip-text theme-gradient-text border theme-border transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg"
         >
-          <span className="absolute inset-0 rounded-xl border-[#DB4BB0]"></span>
+          <span className="absolute inset-0 rounded-xl theme-border"></span>
           My Resume 
         </button>
       </div>
