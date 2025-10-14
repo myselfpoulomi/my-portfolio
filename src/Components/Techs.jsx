@@ -41,7 +41,7 @@ function Techs() {
             {[Reactlogo, ExpressJs, Nodejs, MongoDB, HTML, CSS, Tailwind, JavaScript, C, CPP, Vite, GitHub, Java, Firebase, Vercel, Netlify].map((imgSrc, index) => (
               <img
                 key={index}
-                className="h-10 w-10 md:h-12 md:w-12 transition-transform duration-500 ease-in-out hover:scale-110 hover:shadow-xl dark:invert-0"
+                className="h-10 w-10 md:h-12 md:w-12 transition-transform duration-500 ease-in-out hover:scale-110 hover:shadow-xl dark:invert-0 animate-float-slow"
                 src={imgSrc}
                 alt=""
               />
