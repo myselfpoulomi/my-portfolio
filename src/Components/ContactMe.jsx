@@ -57,7 +57,7 @@ function ContactMe() {
       id="contact"
       className="flex flex-col items-center mt-16 py-6 justify-center"
     >
-      <div className="w-full max-w-[1590px] px-6 md:px-12 lg:px-24">
+      <div className="container-x">
         <div className="w-full flex justify-center">
           <div className="text-[28px] md:text-[40px] font-bold text-center relative">
             <h1 className="inline-block relative pb-2 text-neutral-900 dark:text-zinc-200">
@@ -66,7 +66,7 @@ function ContactMe() {
             </h1>
           </div>
         </div>
-        <div className="w-full md:mt-20 mt-9 flex flex-wrap md:flex-nowrap justify-evenly gap-10">
+        <div className="w-full md:mt-20 mt-9 flex flex-wrap md:flex-nowrap justify-between gap-10">
         {/* Left Section - Contact Info */}
         <div className="w-full md:w-[25%] flex flex-col gap-6 text-start md:mt-0">
           <span className="theme-gradient-text w-fit font-bold text-[40px] md:text-[50px]">

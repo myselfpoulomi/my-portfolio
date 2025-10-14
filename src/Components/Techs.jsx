@@ -20,13 +20,14 @@ import Netlify from '../assets/icons/Netlify-Dark.svg'
 function Techs() {
   return (
     <div id="techs" className="py-12 md:py-16">
+      <div className="container-x">
       <div className="text-[32px] md:text-[40px] font-bold text-center md:mt-2 relative mt-36">
         <h1 className="inline-block relative pb-2 text-neutral-900 dark:text-zinc-200">
           Techs
           <span className="rounded absolute left-0 bottom-0 w-full h-1 theme-gradient-bg"></span>
         </h1>
       </div>
-      <div className="text-center md:mt-10 mt-5 flex flex-col justify-center px-5 py-0">
+      <div className="text-center md:mt-10 mt-5 flex flex-col justify-center items-center px-0 py-0">
         <h1 className="font-medium text-[39px] sm:text-[35px] md:text-[45px] flex flex-col text-center text-neutral-900 dark:text-zinc-200 ">
           Some of Techs I like
         </h1>
@@ -34,9 +35,9 @@ function Techs() {
           to work with
         </h1>
       </div>
-      <div className="flex items-center justify-center w-[100%] md:mt-7 mt-4">
-        <div className="w-[92%] md:w-[80%] lg:w-[65%] rounded-md bg-white dark:bg-[#161513] animate-fadeInUp p-4 md:p-6">
-          <div className="grid grid-cols-4 gap-6 md:gap-8 place-items-center">
+      <div className="flex items-center justify-center w-full md:mt-7 mt-4">
+        <div className="w-full max-w-[900px] mx-auto rounded-md bg-white dark:bg-[#161513] animate-fadeInUp py-4 md:py-6 px-0">
+          <div className="grid grid-cols-4 gap-x-8 md:gap-x-10 gap-y-10 md:gap-y-14 place-items-center">
             {[Reactlogo, ExpressJs, Nodejs, MongoDB, HTML, CSS, Tailwind, JavaScript, C, CPP, Vite, GitHub, Java, Firebase, Vercel, Netlify].map((imgSrc, index) => (
               <img
                 key={index}
@@ -47,6 +48,7 @@ function Techs() {
             ))}
           </div>
         </div>
+      </div>
       </div>
     </div>
   );

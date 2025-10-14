@@ -5,8 +5,9 @@ function AboutMe() {
   return (
     <div
       id="about"
-      className="text-white mt-5 px-6 md:px-12 lg:px-20 py-10 flex flex-col items-center"
+      className="text-white mt-5 py-10 flex flex-col items-center"
     >
+      <div className="container-x">
       {/* Section Title */}
       <div className="text-[32px] md:text-[40px] font-bold text-center mt-2 relative">
         <h1 className="inline-block relative pb-2 text-neutral-900 dark:text-zinc-200">
@@ -16,10 +17,10 @@ function AboutMe() {
       </div>
 
       {/* Content Container */}
-      <div className="flex flex-col md:flex-row items-center justify-center gap-12 md:gap-20 mt-14">
+      <div className="flex flex-col md:flex-row items-start justify-between gap-12 md:gap-20 mt-14">
 
         {/* Profile Picture */}
-        <div className="w-[80%] sm:w-[60%] md:w-[40%] lg:w-[28%] hidden sm:flex justify-center">
+        <div className="w-full md:w-[40%] lg:w-[32%] hidden sm:flex justify-start">
           <img
             className="w-full max-w-[270px] h-auto rounded-lg"
             src={profilepic}
@@ -28,7 +29,7 @@ function AboutMe() {
         </div>
 
         {/* About Me Text */}
-        <div className="w-full md:w-[55%] text-[16px] md:text-[20px] font-light text-neutral-800 dark:text-zinc-200 flex flex-col gap-6">
+        <div className="w-full md:w-[58%] text-[16px] md:text-[20px] font-light text-neutral-800 dark:text-zinc-200 flex flex-col gap-6">
           <p>
             I'm a Full-Stack Developer who loves building clean, responsive, and
             user-friendly websites. I work with React.js,
@@ -84,6 +85,7 @@ function AboutMe() {
             )}
           </React.Fragment>
         ))}
+      </div>
       </div>
     </div>
   );

@@ -15,8 +15,9 @@ function Home() {
   };
 
   return (
-    <div id="home" className="text-neutral-900 dark:text-white flex items-center justify-center flex-col gap-4 px-6 md:px-8 lg:px-0 mt-6 py-10 md:py-16">
-      <div className="flex flex-col justify-center items-center md:gap-3 gap-5 w-full md:w-[60%] lg:w-[40%]">
+    <div id="home" className="text-neutral-900 dark:text-white flex items-center justify-center flex-col gap-4 mt-6 py-10 md:py-16">
+      <div className="container-x">
+      <div className="flex flex-col justify-center items-center md:gap-3 gap-5 w-full">
         <img
           src={profilepic}
           alt="Description of image"
@@ -43,20 +44,21 @@ function Home() {
           </div>
         </div>
       </div>
-      <div className="w-full max-w-[520px] flex flex-wrap gap-3 items-center justify-center md:justify-evenly mt-2">
+      <div className="w-full max-w-[520px] flex flex-wrap gap-6 items-center justify-center mx-auto mt-6">
         <Link to="contact" smooth={true} duration={800}>
-          <button className="rounded-xl py-2 px-6 transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg theme-gradient-bg text-white animate-float-slow animate-delay-200">
+          <button className="rounded-xl py-2 px-6 transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg theme-gradient-bg text-white">
             Connect With Me
           </button>
         </Link>
 
         <button
           onClick={handleDownloadResume}
-          className="relative py-2 px-6 rounded-xl text-white bg-clip-text theme-gradient-text border theme-border transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg animate-float-slow animate-delay-400"
+          className="relative py-2 px-6 rounded-xl text-white bg-clip-text theme-gradient-text border theme-border transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg"
         >
           <span className="absolute inset-0 rounded-xl theme-border"></span>
           My Resume 
         </button>
+      </div>
       </div>
     </div>
   );

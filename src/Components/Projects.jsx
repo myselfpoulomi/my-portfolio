@@ -64,7 +64,8 @@ function Projects() {
   const displayedProjects = showAll ? projectData : projectData.slice(0, 3);
 
   return (
-    <div id="portfolio" className="h-auto mt-24 md:mt-36 px-4">
+    <div id="portfolio" className="h-auto mt-24 md:mt-36">
+      <div className="container-x">
       <div className="text-[32px] md:text-[40px] font-bold text-center md:mt-2 relative mt-0">
         <h1 className="inline-block relative pb-2 text-neutral-900 dark:text-zinc-200">
           My Latest Works
@@ -72,12 +73,12 @@ function Projects() {
         </h1>
       </div>
 
-      <div className="h-auto w-full flex flex-col items-center justify-around mt-10 md:mt-14">
-        <div className="w-full md:w-[90%] flex flex-col justify-center items-center gap-8">
+      <div className="h-auto w-full flex flex-col items-start justify-start mt-10 md:mt-14">
+        <div className="w-full flex flex-col justify-start items-stretch gap-8">
           {displayedProjects.map((project, index) => (
             <div
               key={index}
-              className={`border border-zinc-700 h-auto flex flex-col md:flex-row items-center justify-between gap-6 md:gap-8 p-4 md:p-6 rounded-xl transition-all duration-300 hover:border-zinc-500 hover:shadow-lg md:w-[75%] w-full animate-float-slow hover-float ${
+              className={`border border-zinc-700 h-auto flex flex-col md:flex-row items-center justify-between gap-6 md:gap-8 p-4 md:p-6 rounded-xl transition-all duration-300 hover:border-zinc-500 hover:shadow-lg w-full animate-float-slow hover-float ${
                 index === 0 ? 'animate-delay-200' : 
                 index === 1 ? 'animate-delay-400' : 
                 index === 2 ? 'animate-delay-600' : 
@@ -135,6 +136,7 @@ function Projects() {
             </div>
           )}
         </div>
+      </div>
       </div>
     </div>
   );

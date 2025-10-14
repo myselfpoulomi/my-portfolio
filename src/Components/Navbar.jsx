@@ -41,7 +41,7 @@ function Navbar() {
         scrolling ? "bg-white/80 dark:bg-[#161513]/90 shadow-md" : "bg-transparent"
       }`}
     >
-      <div className="flex items-center justify-between md:justify-evenly px-6 py-6 md:px-10">
+      <div className="container-x flex items-center justify-between py-6">
         {/* Logo / Brand Name */}
         <div className="text-2xl font-bold theme-gradient-text">
           {"<Poulomi/>"}

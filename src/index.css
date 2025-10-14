@@ -117,3 +117,8 @@ html::-webkit-scrollbar {
   transform: translateY(-5px) scale(1.05);
   transition: all 0.3s ease;
 }
+
+/* Consistent page container */
+.container-x {
+  @apply w-full max-w-[1200px] mx-auto px-6 md:px-10;
+}
