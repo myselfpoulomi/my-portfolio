@@ -104,7 +104,7 @@ function ContactMe() {
           className="w-full md:w-[60%] px-4 md:px-6 text-neutral-800 dark:text-zinc-300 flex flex-col gap-4 md:gap-5"
         >
           <div>
-            <label className="mb-1">Your Name</label>
+            <label className="mb-6">Your Name</label>
             <input
               type="text"
               name="name"
@@ -113,7 +113,7 @@ function ContactMe() {
             />
           </div>
           <div>
-            <label className="mb-1">Your Email</label>
+            <label className="mb-6">Your Email</label>
             <input
               type="email"
               name="email"
@@ -122,7 +122,7 @@ function ContactMe() {
             />
           </div>
           <div>
-            <label className="mb-1">Write your message here</label>
+            <label className="mb-6">Write your message here</label>
             <textarea
               placeholder="Enter your message"
               className="w-full py-2 px-4 bg-white text-neutral-900 dark:bg-[#201e1b] dark:text-white border rounded-lg theme-border h-32 focus:outline-none focus:border-[var(--color-primary)] focus:ring-2 focus:ring-[var(--color-primary)]/40"
