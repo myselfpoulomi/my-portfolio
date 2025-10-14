@@ -42,3 +42,78 @@ html::-webkit-scrollbar {
 .animate-fadeInUp {
   animation: fadeInUp 900ms ease-out both;
 }
+
+/* Floating Animations for Home and Projects */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes floatSlow {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes floatDiagonal {
+  0%, 100% {
+    transform: translate(0px, 0px);
+  }
+  25% {
+    transform: translate(3px, -8px);
+  }
+  50% {
+    transform: translate(-2px, -12px);
+  }
+  75% {
+    transform: translate(-3px, -6px);
+  }
+}
+
+/* Floating Animation Classes */
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.animate-float-slow {
+  animation: floatSlow 4s ease-in-out infinite;
+}
+
+.animate-float-diagonal {
+  animation: floatDiagonal 4s ease-in-out infinite;
+}
+
+/* Staggered Animation Delays */
+.animate-delay-200 {
+  animation-delay: 0.2s;
+}
+
+.animate-delay-400 {
+  animation-delay: 0.4s;
+}
+
+.animate-delay-600 {
+  animation-delay: 0.6s;
+}
+
+.animate-delay-800 {
+  animation-delay: 0.8s;
+}
+
+.animate-delay-1000 {
+  animation-delay: 1s;
+}
+
+/* Hover Effects for Floating Elements */
+.hover-float:hover {
+  animation-play-state: paused;
+  transform: translateY(-5px) scale(1.05);
+  transition: all 0.3s ease;
+}

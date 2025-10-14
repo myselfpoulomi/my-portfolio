@@ -77,7 +77,13 @@ function Projects() {
           {displayedProjects.map((project, index) => (
             <div
               key={index}
-              className="border border-zinc-700 h-auto flex flex-col md:flex-row items-center justify-between gap-6 md:gap-8 p-4 md:p-6 rounded-xl transition-all duration-300 hover:border-zinc-500 hover:shadow-lg md:w-[75%] w-full"
+              className={`border border-zinc-700 h-auto flex flex-col md:flex-row items-center justify-between gap-6 md:gap-8 p-4 md:p-6 rounded-xl transition-all duration-300 hover:border-zinc-500 hover:shadow-lg md:w-[75%] w-full animate-float-slow hover-float ${
+                index === 0 ? 'animate-delay-200' : 
+                index === 1 ? 'animate-delay-400' : 
+                index === 2 ? 'animate-delay-600' : 
+                index === 3 ? 'animate-delay-800' : 
+                index === 4 ? 'animate-delay-1000' : 'animate-delay-200'
+              }`}
             >
               <div className="w-full md:w-[50%] flex flex-col justify-center items-center gap-2 text-center md:text-left">
                 <h1 className="text-[22px] md:text-[28px] lg:text-[32px] font-semibold text-neutral-900 dark:text-zinc-300 text-center md:text-left">
@@ -122,7 +128,7 @@ function Projects() {
             <div className="flex justify-center items-center h-[80px] md:h-[100px] w-full">
               <button
                 onClick={() => setShowAll(true)}
-                className="px-6 py-2 rounded-lg text-white theme-gradient-bg shadow-sm hover:opacity-90 transition-all duration-300"
+                className="px-6 py-2 rounded-lg text-white theme-gradient-bg shadow-sm hover:opacity-90 transition-all duration-300 animate-float animate-delay-500"
               >
                 View More
               </button>

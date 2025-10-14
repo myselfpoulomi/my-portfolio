@@ -20,7 +20,7 @@ function Home() {
         <img
           src={profilepic}
           alt="Description of image"
-          className="w-[180px] h-[180px] md:w-[220px] md:h-[220px] object-cover rounded-full"
+          className="w-[180px] h-[180px] md:w-[220px] md:h-[220px] object-cover rounded-full animate-float hover-float shadow-lg"
         />
         <div className="font-bold text-[30px] md:text-[60px] justify-center items-center flex flex-col text-center">
           <div className="flex items-center">
@@ -45,14 +45,14 @@ function Home() {
       </div>
       <div className="w-full max-w-[520px] flex flex-wrap gap-3 items-center justify-center md:justify-evenly mt-2">
         <Link to="contact" smooth={true} duration={800}>
-          <button className="rounded-xl py-2 px-6 transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg theme-gradient-bg text-white">
+          <button className="rounded-xl py-2 px-6 transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg theme-gradient-bg text-white animate-float-slow animate-delay-200">
             Connect With Me
           </button>
         </Link>
 
         <button
           onClick={handleDownloadResume}
-          className="relative py-2 px-6 rounded-xl text-white bg-clip-text theme-gradient-text border theme-border transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg"
+          className="relative py-2 px-6 rounded-xl text-white bg-clip-text theme-gradient-text border theme-border transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg animate-float-slow animate-delay-400"
         >
           <span className="absolute inset-0 rounded-xl theme-border"></span>
           My Resume 
