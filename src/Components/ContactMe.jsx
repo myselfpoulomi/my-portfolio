@@ -109,7 +109,7 @@ function ContactMe() {
               type="text"
               name="name"
               placeholder="Enter your name"
-              className="w-full p-2 bg-white text-neutral-900 dark:bg-[#201e1b] dark:text-white border border-gray-300 dark:border-gray-700 rounded"
+              className="w-full py-2 px-4 bg-white text-neutral-900 dark:bg-[#201e1b] dark:text-white border rounded-lg theme-border focus:outline-none focus:border-[var(--color-primary)] focus:ring-2 focus:ring-[var(--color-primary)]/40"
             />
           </div>
           <div>
@@ -118,14 +118,14 @@ function ContactMe() {
               type="email"
               name="email"
               placeholder="Enter your email"
-              className="w-full p-2 bg-white text-neutral-900 dark:bg-[#201e1b] dark:text-white border border-gray-300 dark:border-gray-700 rounded"
+              className="w-full py-2 px-4 bg-white text-neutral-900 dark:bg-[#201e1b] dark:text-white border rounded-lg theme-border focus:outline-none focus:border-[var(--color-primary)] focus:ring-2 focus:ring-[var(--color-primary)]/40"
             />
           </div>
           <div>
             <label className="mb-1">Write your message here</label>
             <textarea
               placeholder="Enter your message"
-              className="w-full p-2 bg-white text-neutral-900 dark:bg-[#201e1b] dark:text-white border border-gray-300 dark:border-gray-700 rounded h-32"
+              className="w-full py-2 px-4 bg-white text-neutral-900 dark:bg-[#201e1b] dark:text-white border rounded-lg theme-border h-32 focus:outline-none focus:border-[var(--color-primary)] focus:ring-2 focus:ring-[var(--color-primary)]/40"
               name="massage"
             ></textarea>
           </div>
