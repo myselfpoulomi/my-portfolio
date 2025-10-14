@@ -13,6 +13,7 @@ html::-webkit-scrollbar {
   --color-primary: #f0a05a; /* lighter middle accent for contrast */
   --color-primary-dark: #d46a32; /* lighter dark accent */
   --color-primary-muted: #d88a5c; /* lighter muted accent */
+  --color-primary-bright: #ffb36b; /* brighter for hover accents */
 }
 
 /* Dark theme overrides */
@@ -20,6 +21,7 @@ html::-webkit-scrollbar {
   --color-primary: #f08a41;
   --color-primary-dark: #c55a23;
   --color-primary-muted: #b5744a;
+  --color-primary-bright: #ffa760;
 }
 
 .theme-gradient-text {

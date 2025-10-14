@@ -78,7 +78,7 @@ function Projects() {
           {displayedProjects.map((project, index) => (
             <div
               key={index}
-              className={`border border-zinc-700 h-auto flex flex-col md:flex-row items-center justify-between gap-6 md:gap-8 p-4 md:p-6 rounded-xl transition-all duration-300 hover:border-zinc-500 hover:shadow-lg w-full animate-float-slow hover-float ${
+              className={`border theme-border h-auto flex flex-col md:flex-row items-center justify-between gap-6 md:gap-8 p-4 md:p-6 rounded-xl transition-all duration-300 hover:border-[var(--color-primary)] hover:shadow-lg hover:shadow-[var(--color-primary)]/50 hover:scale-[0.98] w-full animate-float-slow hover-float ${
                 index === 0 ? 'animate-delay-200' : 
                 index === 1 ? 'animate-delay-400' : 
                 index === 2 ? 'animate-delay-600' : 
