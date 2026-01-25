@@ -8,7 +8,7 @@ Welcome to my personal portfolio website! This project showcases my work, skills
 
 # 🧑‍💻 About Me
 
-I'm a passionate FullStack developer focused on building creative and functional web experiences. This portfolio is a reflection of my journey, skills, and selected projects.
+I'm a passionate FullStack developer focused on building creative and functional web experiences.  This portfolio is a reflection of my journey, skills, and selected projects.
 
 
 # ✨ Features
