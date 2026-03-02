@@ -1,13 +1,27 @@
 import React, { useState } from "react";
-import disney from "../assets/projects/disney-colne.png";
-import netflix from "../assets/projects/netflix-clone.png";
-import vscode from "../assets/projects/vs-code-landing.png";
-import youtube from "../assets/projects/youtube-clone.png";
 import MIND from '../assets/projects/MIND.png';
-import HealthHub from '../assets/projects/healthHub.png'
+import HealthHub from '../assets/projects/healthHub.png';
+import ventures from '../assets/projects/ventures.png';
+import novawrite from '../assets/projects/novawrite.png';
 import { ArrowUpRight } from "lucide-react";
 
 const projectData = [
+  {
+    title: "Ventures-Travel with us",
+    description:
+      "A modern travel agency website designed to inspire exploration and simplify trip planning. Built to showcase destinations, highlight packages, and turn visitors into bookings.",
+    tech: ["TypeScript", "Tailwind CSS", "Shadcn"],
+    image: ventures,
+    link: "https://ventures-polu.vercel.app/",
+  },
+  {
+    title: "NovaWrite-Your AI workspace",
+    description:
+      "NovaWrite is an AI-powered writing platform designed to help users create high quality content in seconds. It combines multiple writing tools into one clean, productivity-focused workspace.",
+    tech: ["TypeScript", "TailwindCSS"],
+    image: novawrite,
+    link: "https://novawrite-ai-polu-project.vercel.app/",
+  },
   {
     title: "Hospital-Management-System",
     description:
@@ -23,39 +37,8 @@ const projectData = [
     tech: ["MERN Stack", "Tailwind"],
     image: MIND,
     link: "https://github.com/myselfpoulomi/MIND/",
-  },
-  {
-    title: "Disney+Hotstar Clone",
-    description:
-       "Disney+ Hotstar Clone using React.js and Tailwind CSS, capturing the look and feel of the popular streaming platform. With a clean, responsive design, smooth navigation, and dynamic content displays, it delivers a seamless and immersive user experience.",
-    tech: ["React Js", "Tailwind"],
-    image: disney,
-    link: "https://project2-clone-movie-app-polu.netlify.app/",
-  },
-  {
-    title: "Netflix Clone",
-    description:
-      "A sleek and responsive Netflix Clone built with React.js, Tailwind CSS, and Firebase. It replicates the core UI and user experience of Netflix, featuring smooth navigation, dynamic content display, and secure user login powered by Firebase Authentication.",
-    tech: ["React Js", "Tailwind", "Firebase"],
-    image: netflix,
-    link: "https://github.com/myselfpoulomi/Netflix-Clone-Reactjs",
-  },
-  {
-    title: "VS Code Landing Page",
-    description:
-      "A modern and responsive landing page inspired by Visual Studio Code, built with React and Tailwind CSS. It features a clean layout, smooth design elements, and adapts seamlessly across all devices.",
-    tech: ["React Js", "Tailwind"],
-    image: vscode,
-    link: "https://vscode-landing-page-polu.netlify.app/",
-  },
-  {
-    title: "Youtube Clone",
-    description:
-      "A responsive YouTube Clone built with React.js and Tailwind CSS, replicating the platform’s clean, modern UI and layout. It delivers a smooth browsing experience with dynamic content rendering and adaptive design.",
-    tech: ["React Js", "Tailwind"],
-    image: youtube,
-    link: "https://project3-video-app-clone-polu.netlify.app/",
-  },
+  }, 
+  
 ];
 
 function Projects() {
